@@ -1,4 +1,4 @@
-<?php 
+<?php oi
 session_start();
 $query = new mysqli('localhost', 'root', '', 'projek');
 // Mendapatkan username dan password dari input form
