@@ -6,7 +6,7 @@
     <title>login</title>
 </head>
 <body>
-    <h2>login</h2>oi
+    <h2>login</h2>
     <?php 
 
     if(isset($_GET['pesan'])){
