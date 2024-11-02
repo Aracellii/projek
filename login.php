@@ -9,6 +9,7 @@
     <h2>login</h2>
 <?php
 if (isset($_GET['pesan'])) {
+
     switch ($_GET['pesan']) {
         case "gagal":
             echo "Login gagal! username dan password salah!";
@@ -25,7 +26,6 @@ if (isset($_GET['pesan'])) {
     }
 }
 ?>
-       ?>
     <form method="POST" action="cek_login.php">
 		<table>
 		<tr>
