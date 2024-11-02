@@ -8,24 +8,15 @@
 <body>
     <h2>login</h2>
 <?php
-if (isset($_GET['pesan'])) {
 
-    switch ($_GET['pesan']) {
-        case "gagal":
-            echo "Login gagal! username dan password salah!";
-            break;
-        case "logout":
-            echo "Anda telah berhasil logout";
-            break;
-        case "belum_login":
-            echo "Anda harus login untuk mengakses halaman admin";
-            break;
-        case "daftar_berhasil":
-            echo "<p style='color: green;'>Pendaftaran berhasil! Silakan login.</p>";
-            break;
-    }
-}
-?>
+
+ if(isset($_GET['pesan'])){
+		 if($_GET['pesan'] == "daftar berhasil")
+		 {
+		 echo "daftar berhasil. silahkan login";
+ }
+ ?>
+
     <form method="POST" action="cek_login.php">
 		<table>
 		<tr>
