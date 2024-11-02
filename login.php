@@ -7,22 +7,24 @@
 </head>
 <body>
     <h2>login</h2>
-    <?php 
-
-    if(isset($_GET['pesan'])){
-			if($_GET['pesan'] == "gagal")
-			{
-			echo "Login gagal! username dan password salah!";
-			}else if($_GET['pesan'] == "logout"){
+<?php
+if (isset($_GET['pesan'])) {
+    switch ($_GET['pesan']) {
+        case "gagal":
+            echo "Login gagal! username dan password salah!";
+            break;
+        case "logout":
             echo "Anda telah berhasil logout";
-			}else if($_GET['pesan'] == "belum_login")
-			{
-			echo "Anda harus login untuk mengakses halaman admin";
-			}
+            break;
+        case "belum_login":
+            echo "Anda harus login untuk mengakses halaman admin";
+            break;
+        case "daftar_berhasil":
+            echo "<p style='color: green;'>Pendaftaran berhasil! Silakan login.</p>";
+            break;
     }
-	if (isset($_GET['pesan']) && $_GET['pesan'] == 'daftar_berhasil') {
-		echo "<p style='color: green;'>Pendaftaran berhasil! Silakan login.</p>";
-	}
+}
+?>
        ?>
     <form method="POST" action="cek_login.php">
 		<table>
