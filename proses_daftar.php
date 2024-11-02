@@ -5,6 +5,7 @@ $query = new mysqli('localhost', 'root', '', 'projek');
 
 $username = $_POST['username'];
 $password = $_POST['password'];
+$posisi = $_POST['role'];
 
 // Buat query untuk mengecek apakah username dan password sudah ada
 $cek = "SELECT * FROM user WHERE username = '$username' AND password = '$password'";
@@ -12,12 +13,17 @@ $result = mysqli_query($query, $cek);
 // Cek apakah ada baris yang ditemukan
 if (mysqli_num_rows($result) > 0) {
     echo "Username dan password sudah ada di database.";
-    
 } else {
     echo "Username dan password belum ada di database.";
+    if($posisi=="user"){
     $data = $query->query("INSERT INTO user (username, password) VALUES ('$username', '$password');")
-          or die($query->error);
-}
+          or die($query->error);}
+    else{
+        $data = $query->query("INSERT INTO admin (username, password) VALUES ('$username', '$password');")
+        or die($query->error);}
+
+    }
+
 // Tutup koneksi
 mysqli_close($query);
 ?>
