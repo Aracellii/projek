@@ -28,7 +28,6 @@
     </div>
 
     <h2>login</h2>
-<<<<<<< HEAD
     <?php 
 
     if(isset($_GET['pesan'])){
@@ -64,38 +63,6 @@
 				<td></td>
 				<td><input type="submit" value="LOGIN"></td>
 			</tr>
-=======
-<?php
-
-
- if(isset($_GET['pesan'])){
-		 if($_GET['pesan'] == "daftar berhasil")
-		 {
-		 echo "daftar berhasil. silahkan login";
- }
- ?>
-
-    <form method="POST" action="cek_login.php">
-		<table>
-		<tr>
-			<td>Username</td>
-			<td>:</td>
-			<td><input type="text" name="username" placeholder="Masukkan username"></td>
-		</tr>
-		<tr>
-			<td>Password</td>
-			<td>:</td>
-			<td><input type="password" name="password" placeholder="Masukkan password"></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td><input type="submit" value="LOGIN"></td>
-		</tr>
-		<tr>
-			<td><a href="daftar.php">Daftar Disini</a></td>
-		</tr>
->>>>>>> 4e7970891ff1200ececd86111d309251ce99c2c9
 		</table>			
 	</form>
 	</div>
