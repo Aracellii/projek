@@ -10,6 +10,7 @@ h1,h2,h3,h4,h5{
     margin: 0;
     padding: 0;
 }
+
 .col1 { width: 4.33%; margin: 1.5%; }
 .col2 { width: 12.66%; margin: 1.5%; }
 .col3 { width: 21%; margin: 1.5%; }
@@ -64,7 +65,7 @@ p{
             }
         }
     }
-    & .nav-menu{
+    & .nav-menu {
         a{
         text-decoration: none;
         color: black;
