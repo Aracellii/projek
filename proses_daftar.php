@@ -8,8 +8,14 @@ $password = $_POST['password'];
 $posisi = $_POST['role'];
 
 // Buat query untuk mengecek apakah username dan password sudah ada
+if($posisi=="user"){
 $cek = "SELECT * FROM user WHERE username = '$username' AND password = '$password'";
 $result = mysqli_query($query, $cek);
+}
+elseif($posisi=="admin"){
+ $cek = "SELECT * FROM admin WHERE username = '$username' AND password = '$password'";
+$result = mysqli_query($query, $cek);
+}
 // Cek apakah ada baris yang ditemukan
 if (mysqli_num_rows($result) > 0) {
     echo "Username dan password sudah ada di database.";
