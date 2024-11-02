@@ -4,6 +4,7 @@ $query = new mysqli('localhost', 'root', '', 'projek');
 // Mendapatkan username dan password dari input form
 $username = $_POST['username'];
 $password = $_POST['password'];
+
 // Menyeleksi data dari tabel 'user' dan 'admin' sekaligus
 $data = $query->query("SELECT 'user' AS role FROM user WHERE username='$username' AND password='$password'
                        UNION
