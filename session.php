@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 // Memeriksa apakah pengguna sudah login
 if (empty($_SESSION['username'])) {
     header("location:login.php?pesan=belum_login");
@@ -15,9 +14,8 @@ if (empty($_SESSION['username'])) {
    <?php
      // Menampilkan username
      echo "Username: " . $_SESSION['username'] . "<br>";
-
      // Menampilkan role  
-     echo "Role Anda: " . $_SESSION['username'] . "<br>";
+     echo "Role Anda: " . $_SESSION['role'] . "<br>";
    ?>   
 <br>
 <a href="logout.php">Logout</a>
