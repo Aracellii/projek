@@ -20,6 +20,9 @@
 			echo "Anda harus login untuk mengakses halaman admin";
 			}
     }
+	if (isset($_GET['pesan']) && $_GET['pesan'] == 'daftar_berhasil') {
+		echo "<p style='color: green;'>Pendaftaran berhasil! Silakan login.</p>";
+	}
        ?>
     <form method="POST" action="cek_login.php">
 		<table>

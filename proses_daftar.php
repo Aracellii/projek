@@ -13,6 +13,7 @@ $result = mysqli_query($query, $cek);
 // Cek apakah ada baris yang ditemukan
 if (mysqli_num_rows($result) > 0) {
     echo "Username dan password sudah ada di database.";
+    header("location:daftar.php?pesan=daftar gagal");
 } else {
     echo "Username dan password belum ada di database.";
     if($posisi=="user"){
@@ -21,9 +22,8 @@ if (mysqli_num_rows($result) > 0) {
     else{
         $data = $query->query("INSERT INTO admin (username, password) VALUES ('$username', '$password');")
         or die($query->error);}
-
+        header("location:login.php?pesan=daftar berhasil");
     }
-
 // Tutup koneksi
 mysqli_close($query);
 ?>

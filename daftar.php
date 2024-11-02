@@ -7,6 +7,11 @@
     <title>login</title>
 </head>
 <body>
+<?php
+if (isset($_GET['pesan']) && $_GET['pesan'] == 'daftar_gagal') {
+    echo "Pendaftaran gagal: Username dan password sudah ada di database.";
+}
+?>
     <h2>DAFTAR</h2>
     <form method="POST" action="proses_daftar.php">
 		<table>
@@ -27,10 +32,6 @@
         <td><input type="radio" name="role" value="user">
         User</td>
 		</tr>
-   
-    	
-
-
 		<tr>
 			<td></td>
 			<td></td>
