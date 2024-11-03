@@ -5,6 +5,19 @@
     padding: 20px;
 }
 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    background: linear-gradient(to top, #8b0000 0%, #ffccff 100%);
+    margin-bottom: 260px;
+}
+
 .nav-container{
     max-width: 1200px;
     width: 90%;
@@ -65,21 +78,11 @@
     }
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "poppins", sans-serif;
-    background-color: rgb(255, 231, 231);
-}
-
 /* Card styling */
 .login-card {
+    margin-top: 50px;
     width: 380px;
-    height: 350px;
+    height: 380px;
     padding: 2rem;
     background: rgb(253, 65, 65); 
     border-radius: 30px;
@@ -88,22 +91,13 @@ body {
 
     h2{
         margin-bottom: 1rem;
-    color: darkred;
-    span{
-        color: black;
-    }
-    transition-duration: 0.3s;
-    &:hover{
-        color: black;
-        span{
-            color: darkred;
-        }
-    }
+        color: white;
     }
     p{
         margin-top: 5px;
         margin-bottom: 5px;
     }
+
 }
 
 /* Title styling */
