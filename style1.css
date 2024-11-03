@@ -73,7 +73,7 @@
 
 body {
     font-family: "poppins", sans-serif;
-    background-color: rgb(254, 231, 231);
+    background-color: rgb(255, 231, 231);
 }
 
 /* Card styling */
@@ -143,6 +143,7 @@ form-body{
     justify-content: center;
     display: flex;
 }
+
 
 .checkboxes{
     display: flex;

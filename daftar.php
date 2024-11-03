@@ -28,7 +28,7 @@
 		if (isset($_GET['pesan']) && $_GET['pesan'] == 'daftar_gagal') {
 			echo "Pendaftaran gagal: Username dan password sudah ada di database.";
 		}
-		?>
+		?>	
 
 <!--Login Card-->
 <form-body>
@@ -37,16 +37,9 @@
     	<form>
         	<input type="text" placeholder="Username" required>
         	<input type="password" placeholder="Password" required>
-
-	<div class="checkboxes">
-			<div class="row"> 		
-				<input type="radio" name="role" value="admin">Admin
-			</div>
-			<div class="row">	
-				<input type="radio" name="role" value="user">User
-	</div>
-	</div>
         	<button type="submit">Register</button>
+	</div>
+	</div>
     	</form>
  </login-body>
 </body>

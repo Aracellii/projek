@@ -49,24 +49,25 @@
 		
     	<h2>Log<span>in</span></h2>
 
-    	<form>
-        	<input type="text" placeholder="Username" required>
+    	<form method="POST" action="cek_login.php">
+        	<input type="text" name="username" placeholder="Username" required>
 
-        	<input type="password" placeholder="Password" required>
-
-        	<button type="submit">
-				Log In
-			</button>
-    		</form>
-			<p>
-				------- Belum punya akun? -------
-			</p>
+        	<input type="password" name="password" placeholder="Password" required>
 	
-        	<a type="" href="daftar.php">
-				Register
-			<a>
+        		<button type="submit">
+					Log In
+				</button>
 
-			</div>
+    			</form>
+					<p>
+						------- Belum punya akun? -------
+					</p>
+	
+        			<a type="" href="daftar.php"> <button>
+					Register
+					</button>
+				<a>
+	</div>
 			
 
 <form-body>
