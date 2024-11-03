@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style1.css">
 </head>
 <body>
 	<!-- Header -->
@@ -20,15 +20,12 @@
                     <a href="">Daily Market</a>
                     <a href="">Catalog</a>
                 </div>
-                <div class="profile">
-                    <a class="btn" href="daftar.php">Regrister</a>
-                </div>
+               
             </div>
         </div>
     </div>
 
-    <h2>login</h2>
-<<<<<<< HEAD
+    
     <?php 
 
     if(isset($_GET['pesan'])){
@@ -46,58 +43,34 @@
 		echo "<p style='color: green;'>Pendaftaran berhasil! Silakan login.</p>";
 	}
        ?>
+<!--Login Card-->
+<form-body>
 	<div class="login-card">
-    	<form method="POST" action="cek_login.php">
-			<table>
-			<tr>
-				<td>Username</td>
-				<td>:</td>
-				<td><input type="text" name="username" placeholder="Masukkan username"></td>
-			</tr>
-			<tr>
-				<td>Password</td>
-				<td>:</td>
-				<td><input type="password" name="password" placeholder="Masukkan password"></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td><input type="submit" value="LOGIN"></td>
-			</tr>
-=======
-<?php
+		
+    	<h2>Log<span>in</span></h2>
 
+    	<form>
+        	<input type="text" placeholder="Username" required>
 
- if(isset($_GET['pesan'])){
-		 if($_GET['pesan'] == "daftar berhasil")
-		 {
-		 echo "daftar berhasil. silahkan login";
- }
- ?>
+        	<input type="password" placeholder="Password" required>
 
-    <form method="POST" action="cek_login.php">
-		<table>
-		<tr>
-			<td>Username</td>
-			<td>:</td>
-			<td><input type="text" name="username" placeholder="Masukkan username"></td>
-		</tr>
-		<tr>
-			<td>Password</td>
-			<td>:</td>
-			<td><input type="password" name="password" placeholder="Masukkan password"></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-			<td><input type="submit" value="LOGIN"></td>
-		</tr>
-		<tr>
-			<td><a href="daftar.php">Daftar Disini</a></td>
-		</tr>
->>>>>>> 4e7970891ff1200ececd86111d309251ce99c2c9
-		</table>			
-	</form>
-	</div>
+        	<button type="submit">
+				Log In
+			</button>
+    		</form>
+			<p>
+				------- Belum punya akun? -------
+			</p>
+	
+        	<a type="" href="daftar.php">
+				Register
+			<a>
+
+			</div>
+			
+
+<form-body>
+
+</div>
 </body>
 </html>

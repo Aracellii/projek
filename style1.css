@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.header{
+    padding: 20px;
+}
+
+.nav-container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.btn {
+    background: black;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    &:hover {
+        color: black;
+        background: red;
+    }
+}
+
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1.5%;
+    justify-content: space-between;
+    align-items: center;
+    
+    & .nav-brand{
+        h1{
+            a{
+                text-decoration: none;
+                color: black;
+                span{
+                    color: red;
+                }
+                transition-duration: 0.3s;
+                &:hover{
+                text-decoration: none;
+                color: red;
+                span{
+                    color: black;
+                }
+                }
+            }
+        }
+    }
+    & .nav-menu {
+        a{
+        text-decoration: none;
+        color: black;
+        padding: 10px;
+        transition-duration: 0.3s;
+        &:hover{
+            color: rgb(255, 0, 0);
+            }
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    background-color: rgb(254, 231, 231);
+}
+
+/* Card styling */
+.login-card {
+    width: 380px;
+    height: 350px;
+    padding: 2rem;
+    background: rgb(253, 65, 65); 
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    h2{
+        margin-bottom: 1rem;
+    color: darkred;
+    span{
+        color: black;
+    }
+    transition-duration: 0.3s;
+    &:hover{
+        color: black;
+        span{
+            color: darkred;
+        }
+    }
+    }
+    p{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+/* Title styling */
+
+
+.login-card input[type="text"],
+.login-card input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 1rem;
+    
+}
+
+/* Button styling */
+.login-card button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: darkred;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover{
+        background-color: rgb(103, 1, 1);
+
+    }
+}
+
+form-body{
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+.checkboxes{
+    display: flex;
+}
+
+.row{
+    background-color: azure;
+    margin: 10px;
+    padding: 10px;
+    justify-content: left;
+    border-radius: 30px;
+    display: flex;
+}
