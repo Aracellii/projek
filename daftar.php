@@ -14,12 +14,7 @@
                 <div class="nav-brand">
                     <h1><a href="">Food<span>Stall</span></a></h1>
                 </div>
-                <div class="nav-menu">
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Daily Market</a>
-                    <a href="">Catalog</a>
-                </div>
+             
             </div>
         </div>
     </div>

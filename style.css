@@ -131,6 +131,13 @@ p{
 .food{
     padding: 5% 0;
     margin-bottom: 10px;
+    h2{
+        font-size:70px;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+        text-shadow:black 5px 5px;
+    }
     img{
         width: 200px;
         height: 300px;
