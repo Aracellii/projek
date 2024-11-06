@@ -14,6 +14,9 @@ if (!$kon) {
 // Query untuk mengambil data produk
 $query = "SELECT id_menu, nama_menu, jenis_menu,deskripsi,harga FROM menu WHERE jenis_menu='makanan';";
 $kueri  = "SELECT id_menu, nama_menu, jenis_menu,deskripsi,harga FROM menu WHERE jenis_menu='minuman';";
+$querysemua = "SELECT id_menu, nama_menu, jenis_menu,deskripsi,harga FROM menu;";
+
+$tampil = mysqli_query($kon, $querysemua);
 $result = mysqli_query($kon, $query);
 $hasil = mysqli_query($kon, $kueri);
 
