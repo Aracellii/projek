@@ -18,15 +18,12 @@
             </div>
         </div>
     </div>
-
 		<?php
 		if (isset($_GET['pesan']) && $_GET['pesan'] == 'daftar_gagal') {
 			echo "Pendaftaran gagal: Username dan password sudah ada di database.";
 		}
 		?>	
-
 <!--Login Card-->
-	
 <form-body>
 	<div class="login-card">
     	<h2>Register</h2>

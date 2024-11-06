@@ -18,26 +18,18 @@
             </div>
         </div>
     </div>
-
-    
-   
-
 <!--Login Card-->
 <form-body>
 	<div class="login-card">
 		
     	<h2>Log<span>in</span></h2>
 
-    	<form method="POST" action="cek_login.php">
-
+    	<form method="POST" action="proseslogin.php">
 		<?php 
-
 		if(isset($_GET['pesan'])){
 			if($_GET['pesan'] == "gagal")
-				{
-				
-				echo '<p style="text-align: center";> username dan password salah! </p>';
-				
+				{	
+				echo '<p style="text-align: center";> username dan password salah! </p>';		
 				}
 				else if($_GET['pesan'] == "logout"){
 				echo "Anda telah berhasil logout";
@@ -50,9 +42,7 @@
 			echo "<p style='color: green;'>Pendaftaran berhasil! Silakan login.</p>";
 		}
 		?>
-
         	<input type="text" name="username" placeholder="Username" required>
-
         	<input type="password" name="password" placeholder="Password" required>
 				<div class="tombol-login">
         		<button type="submit">
@@ -63,16 +53,12 @@
 					<p>
 						------- Belum punya akun? -------
 					</p>
-	
         			<a type="" href="daftar.php"> <button>
 					Register
 					</button>
 				<a>
 	</div>
-			
-
 <form-body>
-
 </div>
 </body>
 
