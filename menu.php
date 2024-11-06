@@ -29,140 +29,49 @@
 
 <div class="food">
     <h2>MENU MAKANAN</h2>
-    <div class="container">
-        <div class="row">
-        <div class="col3">
-            <div class="food-card">
-                <div class="fc-image">
-                    <img src="https://images.unsplash.com/photo-1727403851978-46fd1fd82d9d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
-                </div>
-                    <div class="fc-desc">
-                    <h3>INI AYAM MEWAH</h3>
-                    <p>CRISPY NYOi</p>
+        <div class="container">
+            <div class="row">
+                <div class="col3">
+                    <div class="food-card">
+                        <div class="fc-image">
+                        <img src="https://images.unsplash.com/photo-1727403851978-46fd1fd82d9d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                        <h3>INI AYAM MEWAH</h3>
+                        <p>CRISPY NYOi</p>
+                        </div>
+                        <div class="fc-price">
+                        <div class="price-tag">Start from</div>
+                        <div class="price-num">Rp.20 <sup>Ribu</sup> </div>
                     </div>
-                <div class="fc-price">
-                    <div class="price-tag">Start from</div>
-                    <div class="price-num">Rp.20 <sup>Ribu</sup> </div>
                 </div>
-            </div>
-        </div>
-        <div class="col3">
-            <div class="food-card">
-                <div class="fc-image">
-                    <img src="https://images.unsplash.com/photo-1727403851978-46fd1fd82d9d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
-                </div>
-                    <div class="fc-desc">
-                    <h3>INI AYAM MEWAH</h3>
-                    <p>CRISPY NYOi</p>
-                    </div>
-                <div class="fc-price">
-                    <div class="price-tag">Start from</div>
-                    <div class="price-num">Rp.20 <sup>Ribu</sup> </div>
-                </div>
-            </div>
-        </div><div class="col3">
-            <div class="food-card">
-                <div class="fc-image">
-                    <img src="https://images.unsplash.com/photo-1727403851978-46fd1fd82d9d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
-                </div>
-                    <div class="fc-desc">
-                    <h3>INI AYAM MEWAH</h3>
-                    <p>CRISPY NYOi</p>
-                    </div>
-                <div class="fc-price">
-                    <div class="price-tag">Start from</div>
-                    <div class="price-num">Rp.20 <sup>Ribu</sup> </div>
-                </div>
-            </div>
-        </div>
-        <div class="col3">
-            <div class="food-card">
-                <div class="fc-image">
-                    <img src="https://images.unsplash.com/photo-1727403851978-46fd1fd82d9d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
-                </div>
-                    <div class="fc-desc">
-                    <h3>INI AYAM MEWAH</h3>
-                    <p>CRISPY NYOi</p>
-                    </div>
-                <div class="fc-price">
-                    <div class="price-tag">Start from</div>
-                    <div class="price-num">Rp.20 <sup>Ribu</sup> </div>
-                </div>
-            </div>
-        
-            </div>
             </div>
         </div>
     </div>
 </div>
 
 <div class="food">
-    <h2>MENU MINUMAN</h2>
-    <div class="container">
-        <div class="row">
-        <div class="col3">
-            <div class="food-card">
-                <div class="fc-image">
-                    <img src="https://images.unsplash.com/photo-1727403851978-46fd1fd82d9d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
-                </div>
-                    <div class="fc-desc">
-                    <h3>INI AYAM MEWAH</h3>
-                    <p>CRISPY NYOi</p>
+    <h2>MENU MAKANAN</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col3">
+                    <div class="food-card">
+                        <div class="fc-image">
+                        <img src="https://images.unsplash.com/photo-1727403851978-46fd1fd82d9d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
+                        </div>
+                        <div class="fc-desc">
+                        <h3>INI AYAM MEWAH</h3>
+                        <p>CRISPY NYOi</p>
+                        </div>
+                        <div class="fc-price">
+                        <div class="price-tag">Start from</div>
+                        <div class="price-num">Rp.20 <sup>Ribu</sup> </div>
                     </div>
-                <div class="fc-price">
-                    <div class="price-tag">Start from</div>
-                    <div class="price-num">Rp.20 <sup>Ribu</sup> </div>
                 </div>
-            </div>
-        </div>
-        <div class="col3">
-            <div class="food-card">
-                <div class="fc-image">
-                    <img src="https://images.unsplash.com/photo-1727403851978-46fd1fd82d9d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
-                </div>
-                    <div class="fc-desc">
-                    <h3>INI AYAM MEWAH</h3>
-                    <p>CRISPY NYOi</p>
-                    </div>
-                <div class="fc-price">
-                    <div class="price-tag">Start from</div>
-                    <div class="price-num">Rp.20 <sup>Ribu</sup> </div>
-                </div>
-            </div>
-        </div><div class="col3">
-            <div class="food-card">
-                <div class="fc-image">
-                    <img src="https://images.unsplash.com/photo-1727403851978-46fd1fd82d9d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
-                </div>
-                    <div class="fc-desc">
-                    <h3>INI AYAM MEWAH</h3>
-                    <p>CRISPY NYOi</p>
-                    </div>
-                <div class="fc-price">
-                    <div class="price-tag">Start from</div>
-                    <div class="price-num">Rp.20 <sup>Ribu</sup> </div>
-                </div>
-            </div>
-        </div>
-        <div class="col3">
-            <div class="food-card">
-                <div class="fc-image">
-                    <img src="https://images.unsplash.com/photo-1727403851978-46fd1fd82d9d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
-                </div>
-                    <div class="fc-desc">
-                    <h3>INI AYAM MEWAH</h3>
-                    <p>CRISPY NYOi</p>
-                    </div>
-                <div class="fc-price">
-                    <div class="price-tag">Start from</div>
-                    <div class="price-num">Rp.20 <sup>Ribu</sup> </div>
-                </div>
-            </div>
-        
-            </div>
             </div>
         </div>
     </div>
 </div>
+
 </body>
 </html>
