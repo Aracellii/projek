@@ -26,7 +26,7 @@
         </div>
      </div>
     <!--End Header-->
-    <div class="container">
+    <div class="container-menu">
         <div class="tambah-menu">
         <h1>Tambah Menu</h1>
             <form action="" method="POST">
@@ -35,16 +35,17 @@
                     <input class="" type="text" placeholder="Nama Menu" name="namamenu" value="">
                 </div>
                 <div>
-                    <label class=""style="">Harga</label>
+                    <label class="">Harga</label>
                     <input class="" type="number" placeholder="Harga" name="" value="">
                 </div>
+                <label>Masukkan Gambar</label>
                 <div>
-                    <label class="" style=""> Gambar </label>
-                    <input class="" type="file" placeholder="Gambar"  name="gambar" value="">
+                    <label for="file-upload" class="custom-file-upload">Pilih Gambar </label>
+                    <input id="file-upload"name="gambar" value="" type="file" />
                 </div>
                 <div>
-                    <label class=""style=" ">Kategori</label>
-                        <select id="select" class="form-select" name="kategori" style="">
+                    <label class="">Kategori</label>
+                        <select id="select" name="kategori" >
                             <option>Makanan</option>
                             <option>Minuman</option>
                         </select>
@@ -53,7 +54,7 @@
                         <label for="" class="form-label"style="">Deskripsi</label>
                         <input class="" type="text" placeholder="Deskripsi"  name="deskripsi" value="">
                 </div>
-                        <button type="submit" class="" style="">Submit</button>
+                        <button type="submit" class="btn" style="">Submit</button>
         </form>
         </div>
         </div>
