@@ -1,3 +1,4 @@
+<?php include 'tampil.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,50 +27,53 @@
         </div>
      </div>
     <!--End Header-->
-
 <div class="food">
     <h2>MENU MAKANAN</h2>
         <div class="container">
             <div class="row">
+            <?php while ($product = mysqli_fetch_assoc($result)): ?>
                 <div class="col3">
+                
                     <div class="food-card">
                         <div class="fc-image">
-                        <img src="https://images.unsplash.com/photo-1727403851978-46fd1fd82d9d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
+                         <img src="gambar/<?php echo $product['nama_menu']; ?>.jpg" alt="<?php echo $product['nama_menu']; ?>"><br><br>
                         </div>
                         <div class="fc-desc">
-                        <h3>INI AYAM MEWAH</h3>
-                        <p>CRISPY NYOi</p>
+                        <h3><?php echo "Nama Menu: " . $product["nama_menu"] . "<br>"; ?></h3>
+                        <p><?php echo  $product["deskripsi"] ;?></p>
                         </div>
                         <div class="fc-price">
                         <div class="price-tag">Start from</div>
-                        <div class="price-num">Rp.20 <sup>Ribu</sup> </div>
+                        <div class="price-num"><?php echo  $product["harga"] . "<br>"?> </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <?php endwhile ?>
+         </div>
     </div>
 </div>
-
 <div class="food">
-    <h2>MENU MAKANAN</h2>
+    <h2>MENU MINUMAN</h2>
         <div class="container">
             <div class="row">
+            <?php while ($product = mysqli_fetch_assoc($hasil)): ?>
                 <div class="col3">
                     <div class="food-card">
                         <div class="fc-image">
-                        <img src="https://images.unsplash.com/photo-1727403851978-46fd1fd82d9d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="img-responsive">
+                         <img src="gambar/<?php echo $product['nama_menu']; ?>.jpg" alt="<?php echo $product['nama_menu']; ?>"><br><br>
                         </div>
                         <div class="fc-desc">
-                        <h3>INI AYAM MEWAH</h3>
-                        <p>CRISPY NYOi</p>
+                        <h3><?php echo "Nama Menu: " . $product["nama_menu"] . "<br>"; ?></h3>
+                        <p><?php echo  $product["deskripsi"] ;?></p>
                         </div>
                         <div class="fc-price">
                         <div class="price-tag">Start from</div>
-                        <div class="price-num">Rp.20 <sup>Ribu</sup> </div>
+                        <div class="price-num"><?php echo  $product["harga"] . "<br>"?> </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <?php endwhile ?>
+         </div>
     </div>
 </div>
 
