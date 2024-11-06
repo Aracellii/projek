@@ -18,24 +18,26 @@
             </div>
         </div>
     </div>
+		
+<!--Login Card-->
+<form method="POST" action="proses_daftar.php">
 		<?php
 		if (isset($_GET['pesan']) && $_GET['pesan'] == 'daftar_gagal') {
-			echo "Pendaftaran gagal: Username dan password sudah ada di database.";
+			echo "<p style='color: red;'>Pendaftaran gagal: Username dan password sudah ada di database.</p>";
 		}
 		?>	
-<!--Login Card-->
 <form-body>
 	<div class="login-card">
     	<h2>Register</h2>
     	<form>
-        	<input type="text" placeholder="Username" required>
-        	<input type="password" placeholder="Password" required>
+        	<input type="text" name= "username"placeholder="Username" required>
+        	<input type="password" name= "password" placeholder="Password" required>
 			<div class="tombol-login">
         	<button type="submit">Register</button>
 			</div>
 	</div>
 	</div>
-    	</form>
  </login-body>
+	</form>
 </body>
 </html>
