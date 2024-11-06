@@ -31,15 +31,21 @@
     <h2>MENU MAKANAN</h2>
         <div class="container">
             <div class="row">
+                <div class="col3">
+                    <div class="food-card">
+                        <H3>Add Menu</H3>
+                        <a href="tambah.php"> <img src="gambar/plus.png" alt=""> </a>
+                </div>
+            </div>
             <?php while ($product = mysqli_fetch_assoc($result)): ?>
                 <div class="col3">
                 
                     <div class="food-card">
                         <div class="fc-image">
-                         <img src="gambar/<?php echo $product['nama_menu']; ?>.jpg" alt="<?php echo $product['nama_menu']; ?>"><br><br>
+                         <img src="gambar/<?php echo $product['nama_menu']; ?>.png" alt="<?php echo $product['nama_menu']; ?>"><br><br>
                         </div>
                         <div class="fc-desc">
-                        <h3><?php echo "Nama Menu: " . $product["nama_menu"] . "<br>"; ?></h3>
+                        <h3><?php echo  $product["nama_menu"] . "<br>"; ?></h3>
                         <p><?php echo  $product["deskripsi"] ;?></p>
                         </div>
                         <div class="fc-price">
@@ -60,7 +66,7 @@
                 <div class="col3">
                     <div class="food-card">
                         <div class="fc-image">
-                         <img src="gambar/<?php echo $product['nama_menu']; ?>.jpg" alt="<?php echo $product['nama_menu']; ?>"><br><br>
+                         <img src="gambar/<?php echo $product['nama_menu']; ?>.png" alt="<?php echo $product['nama_menu']; ?>"><br><br>
                         </div>
                         <div class="fc-desc">
                         <h3><?php echo "Nama Menu: " . $product["nama_menu"] . "<br>"; ?></h3>

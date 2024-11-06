@@ -33,7 +33,9 @@
     	<form>
         	<input type="text" placeholder="Username" required>
         	<input type="password" placeholder="Password" required>
+			<div class="tombol-login">
         	<button type="submit">Register</button>
+			</div>
 	</div>
 	</div>
     	</form>

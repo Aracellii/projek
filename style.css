@@ -140,13 +140,13 @@ p{
     }
     img{
         width: 200px;
-        height: 300px;
+        height: 200px;
     }
     & .food-card{
         background-color: #c3627b;
         padding: 18px;
         box-sizing: border-box;
-        box-shadow: 7px 7px 10px;
+        box-shadow: 4px 4px 10px;
         border-radius:2px;
         
         .fc-desc{
@@ -201,4 +201,32 @@ p{
         }
        } 
     }
+}
+
+.tambah-menu{
+    border-radius: 15px;
+    padding: 50px;
+    background-color: white;
+    h1{
+        text-align: center  ;
+    }
+
+    form{
+        box-sizing: border-box;
+    text-align: center;
+    text-align: left;
+    align-items:end;
+    justify-content: center;
+    }
+}
+
+.tambah-menu input[type="text"],
+.tambah-menu input[type="number"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 1rem;
+    
 }

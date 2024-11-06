@@ -54,11 +54,11 @@
         	<input type="text" name="username" placeholder="Username" required>
 
         	<input type="password" name="password" placeholder="Password" required>
-	
+				<div class="tombol-login">
         		<button type="submit">
 					Log In
 				</button>
-
+				</div>
     			</form>
 					<p>
 						------- Belum punya akun? -------

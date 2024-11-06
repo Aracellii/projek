@@ -15,7 +15,7 @@
 body {
     font-family: "poppins", sans-serif;
     background: linear-gradient(to top, #8b0000 0%, #ffccff 100%);
-    margin-bottom: 310px;
+    margin-bottom: 330px;
 }
 
 .nav-container{
@@ -82,8 +82,8 @@ body {
 .login-card {
     margin-top: 50px;
     width: 380px;
-    height: 280px;
-    padding: 2rem;
+    padding: 18px;
+    box-sizing: border-box;
     background: linear-gradient(to bottom, #cc669f 0%, #9b0000 100%);
     border-radius: 30px;
     text-align: center;
@@ -100,6 +100,10 @@ body {
 
 }
 
+
+.tombol-login{
+    margin-top: 10px;
+}
 /* Title styling */
 
 
