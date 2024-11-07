@@ -18,7 +18,7 @@
                     <h1><a href="">Food<span>Stall</span></a></h1>
                 </div>
                 <div class="nav-menu">
-                    <a href="main.html">Home</a>
+                    <a href="main.php">Home</a>
                     <a href="">About</a>
                     <a href="">Daily Market</a>
                     <a href="">Catalog</a>
@@ -33,9 +33,11 @@
             <div class="row">
                 <div class="col3">
                     <div class="food-card">
-                        <H3>Add Menu</H3>
+                        <div class="add-menu">
+                        <H3>Add Menu:</H3>
                         <a href="tambah.php"> <img src="gambar/plus.png" alt=""> </a>
                 </div>
+            </div>
             </div>
             <?php while ($product = mysqli_fetch_assoc($result)): ?>
                 <div class="col3">
@@ -49,8 +51,8 @@
                         <p><?php echo  $product["deskripsi"] ;?></p>
                         </div>
                         <div class="fc-price">
-                        <div class="price-tag">Start from</div>
-                        <div class="price-num"><?php echo  $product["harga"] . "<br>"?> </div>
+                        <div class="price-tag">Price :</div>
+                        <div class="price-num">Rp<?php echo  $product["harga"] . "<br>"?> </div>
                     </div>
                 </div>
             </div>
