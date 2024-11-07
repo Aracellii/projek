@@ -1,6 +1,5 @@
 <?php
     $query = new mysqli('localhost', 'root', '', 'projek');
-    $data = $query->query("INSERT INTO menu ("nama_menu", "jenis_menu", "deskripsi","harga","namafile") VALUES ("nilai_masukan", "nilai_masukan", "dst");");
     $namamenu = $_POST['namamenu'];
     $harga = $_POST['harga'];
     $kategori = $_POST['kategori'];
@@ -12,8 +11,6 @@
     if (move_uploaded_file($_FILES['gambar']['tmp_name'], $simpan)) {
         echo "<br>File berhasil diunggah ke direktori: " . $simpan;
     }
-
-
-
-
+    $data = $query->query("INSERT INTO menu (nama_menu, jenis_menu, deskripsi,harga,gambar) VALUES ('$namamenu', '$kategori', '$deskripsi', '$harga', '$namafile');");
+    
 ?>

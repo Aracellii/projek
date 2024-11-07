@@ -12,9 +12,9 @@ if (!$kon) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
 // Query untuk mengambil data produk
-$query = "SELECT id_menu, nama_menu, jenis_menu,deskripsi,harga FROM menu WHERE jenis_menu='makanan';";
-$kueri  = "SELECT id_menu, nama_menu, jenis_menu,deskripsi,harga FROM menu WHERE jenis_menu='minuman';";
-$querysemua = "SELECT id_menu, nama_menu, jenis_menu,deskripsi,harga FROM menu;";
+$query = "SELECT id_menu, nama_menu, jenis_menu,deskripsi,harga,gambar FROM menu WHERE jenis_menu='makanan';";
+$kueri  = "SELECT id_menu, nama_menu, jenis_menu,deskripsi,harga,gambar FROM menu WHERE jenis_menu='minuman';";
+$querysemua = "SELECT id_menu, nama_menu, jenis_menu,deskripsi,harga,gambar FROM menu;";
 
 $tampil = mysqli_query($kon, $querysemua);
 $result = mysqli_query($kon, $query);

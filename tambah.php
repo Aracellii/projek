@@ -47,7 +47,7 @@
                     <label class="">Kategori</label>
                         <select id="select" name="kategori" >
                             <option name="makanan" value="makanan">Makanan</option>
-                            <option name="makanan" value="makanan">Minuman</option>
+                            <option name="minuman" value="minuman">Minuman</option>
                         </select>
                 </div>
                 <div>

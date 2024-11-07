@@ -64,7 +64,11 @@ function goToSection() {
                 <div class="col3">
                     <div class="food-card">
                         <div class="fc-image">
+<<<<<<< Updated upstream
                          <img src="gambar/<?php echo $product['nama_menu']; ?>.png" alt="<?php echo $product['nama_menu']; ?>"><br><br>
+=======
+                         <img src="gambar/<?php echo $product['gambar']; ?>" alt="<?php echo $product['nama_menu']; ?>"><br><br>
+>>>>>>> Stashed changes
                         </div>
                         <div class="fc-desc">
                         <h3><?php echo "Nama Menu: " . $product["nama_menu"] . "<br>"; ?></h3>
