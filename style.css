@@ -7,6 +7,7 @@ body{
     padding: 0;
     font-family: "Poppins", sans-serif;
     background: linear-gradient(to top, #8b0000 0%, #da8aad 100%);
+    height: auto;
 }
 h1,h2,h3,h4,h5{
     margin: 0;
@@ -152,7 +153,7 @@ p{
         padding: 18px;
         box-sizing: border-box;
         box-shadow: 4px 4px 10px;
-        border-radius:2px;
+        border-radius:5px 100px 0px 0px;
         
         .fc-desc{
             h3{
@@ -208,6 +209,15 @@ p{
     }
 }
 
+.add-menu{
+    h3{
+        margin-top: 10px;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    margin-bottom: 36px;
+}
+
 .tambah-menu{
     
     width: 50%;
@@ -244,6 +254,8 @@ p{
     }
 }
 }
+
+
 
 .tambah-menu input[type="text"],
 .tambah-menu input[type="number"] {
