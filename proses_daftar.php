@@ -11,12 +11,12 @@ $result = mysqli_query($query, $cek);
 // Cek apakah ada baris yang ditemukan
 if (mysqli_num_rows($result) > 0) {
     echo "Username dan password sudah ada di database.";
-    header("location:daftar.php?pesan=daftar gagal");
+    header("location:daftar.php?pesan=daftar_gagal");
 } else {
     echo "Username dan password belum ada di database.";
     $data = $query->query("INSERT INTO user (username, password) VALUES ('$username', '$password');")
           or die($query->error);
-          header("Location: login.php");
+          header("Location: login.php?pesan=daftar_berhasil");
     }
 // Tutup koneksi
 mysqli_close($query);

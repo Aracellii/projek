@@ -39,7 +39,7 @@
 				}
 		}
 		if (isset($_GET['pesan']) && $_GET['pesan'] == 'daftar_berhasil') {
-			echo "<p style='color: green;'>Pendaftaran berhasil! Silakan login.</p>";
+			echo "<p style='color: white;'>Pendaftaran berhasil! Silakan login.</p>";
 		}
 		?>
         	<input type="text" name="username" placeholder="Username" required>

@@ -21,15 +21,16 @@
 		
 <!--Login Card-->
 <form method="POST" action="proses_daftar.php">
-		<?php
-		if (isset($_GET['pesan']) && $_GET['pesan'] == 'daftar_gagal') {
-			echo "<p style='color: red;'>Pendaftaran gagal: Username dan password sudah ada di database.</p>";
-		}
-		?>	
+		
 <form-body>
 	<div class="login-card">
     	<h2>Register</h2>
     	<form>
+		<?php
+		if (isset($_GET['pesan']) && $_GET['pesan'] == 'daftar_gagal') {
+			echo "<p style='color: black'>Pendaftaran gagal: Username dan password sudah ada di database.</p>";
+		}
+		?>	
         	<input type="text" name= "username"placeholder="Username" required>
         	<input type="password" name= "password" placeholder="Password" required>
 			<div class="tombol-login">
