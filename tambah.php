@@ -29,25 +29,25 @@
     <div class="container-menu">
         <div class="tambah-menu">
         <h1>Tambah Menu</h1>
-            <form action="" method="POST">
+            <form action="prosesmenu.php" method="POST" enctype="multipart/form-data".>
                 <div>
                     <label class="">Nama Menu</label>    
-                    <input class="" type="text" placeholder="Nama Menu" name="namamenu" value="">
+                    <input  required class="" type="text" placeholder="Nama Menu" name="namamenu" value="">
                 </div>
                 <div>
                     <label class="">Harga</label>
-                    <input class="" type="number" placeholder="Harga" name="" value="">
+                    <input required class="" type="number" placeholder="Harga" name="harga" value="">
                 </div>
                 <label>Masukkan Gambar</label>
                 <div>
                     <label for="file-upload" class="custom-file-upload">Pilih Gambar </label>
-                    <input id="file-upload"name="gambar" value="" type="file" />
+                    <input accept="image/png, image/gif, image/jpeg" required id="file-upload"name="gambar" value="" type="file" />
                 </div>
                 <div>
                     <label class="">Kategori</label>
                         <select id="select" name="kategori" >
-                            <option>Makanan</option>
-                            <option>Minuman</option>
+                            <option name="makanan" value="makanan">Makanan</option>
+                            <option name="makanan" value="makanan">Minuman</option>
                         </select>
                 </div>
                 <div>
