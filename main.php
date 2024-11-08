@@ -67,7 +67,7 @@ function goToSection() {
                          <img src="gambar/<?php echo $product['gambar']; ?>" alt="<?php echo $product['nama_menu']; ?>"><br><br>
                         </div>
                         <div class="fc-desc">
-                        <h3><?php echo "Nama Menu: " . $product["nama_menu"] . "<br>"; ?></h3>
+                        <h3><?php echo $product["nama_menu"] . "<br>"; ?></h3>
                         <p><?php echo  $product["deskripsi"] ;?></p>
                         </div>
                         <div class="fc-price">

@@ -50,8 +50,8 @@ p{
 
 .nav{
     display: flex;
-    flex-wrap: wrap;
     margin: 0 1.5%;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     
@@ -137,6 +137,7 @@ p{
 .food{
     padding: 5% 0;
     margin-bottom: 10px;
+    
     h2{
         font-size:70px;
         font-weight: 400;
@@ -145,15 +146,17 @@ p{
         text-shadow:black 5px 5px;
     }
     img{
-        width: 200px;
-        height: 200px;
+        width: 215px;
+        height: 215px;
+        border-radius: 10px;
     }
     & .food-card{
+        
         background-color: #c3627b;
         padding: 18px;
         box-sizing: border-box;
         box-shadow: 4px 4px 10px;
-        border-radius:5px 100px 0px 0px;
+        border-radius:15px 15px 5px 5px;
         
         .fc-desc{
             h3{
@@ -236,8 +239,7 @@ p{
     justify-content: center;
     }
     
-.btn {
-    
+.btn {    
     background: white;
     font-size: medium;
     margin-top: 10px;
@@ -255,7 +257,29 @@ p{
 }
 }
 
-
+.btn-menu{
+    background: white;
+    font-size: medium;
+    margin-top: 10px;
+    color: black;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;  
+    cursor: pointer;
+    transition-duration: 0.5s;
+    a{
+        transition-duration: 0.5s;
+        color: black;
+        text-decoration: none;
+    }
+    &:hover {
+        a{
+            color: white;
+        }
+        background: black;
+    }
+    
+}
 
 .tambah-menu input[type="text"],
 .tambah-menu input[type="number"] {

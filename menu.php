@@ -53,6 +53,10 @@
                         <div class="price-tag">Price :</div>
                         <div class="price-num">Rp<?php echo  $product["harga"] . "<br>"?> </div>
                     </div>
+                    <div>
+                        <button class="btn-menu"><a href="">Hapus</a></button> 
+                        <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
+                        </div>
                 </div>
             </div>
             <?php endwhile ?>
@@ -70,15 +74,19 @@
                          <img src="gambar/<?php echo $product['gambar']; ?>" alt="<?php echo $product['nama_menu']; ?>"><br><br>
                         </div>
                         <div class="fc-desc">
-                        <h3><?php echo "Nama Menu: " . $product["nama_menu"] . "<br>"; ?></h3>
+                        <h3><?php echo $product["nama_menu"] . "<br>"; ?></h3>
                         <p><?php echo  $product["deskripsi"] ;?></p>
                         </div>
                         <div class="fc-price">
                         <div class="price-tag">Start from</div>
                         <div class="price-num"><?php echo  $product["harga"] . "<br>"?> </div>
+                        </div>
+                        <div>
+                        <button class="btn-menu">Hapus</button> 
+                        <button class="btn-menu">Edit </button>
+                        </div>
                     </div>
                 </div>
-            </div>
             <?php endwhile ?>
          </div>
     </div>
