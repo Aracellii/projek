@@ -71,25 +71,28 @@
     <h2>MENU MINUMAN</h2>
         <div class="container">
             <div class="row">
-            <?php while ($product = mysqli_fetch_assoc($hasil)): ?>
+            <?php while ($product = mysqli_fetch_assoc($hasil)): 
+                 $gambar    = $product['gambar']; 
+                 $namamenu  = $product["nama_menu"];
+                 $deskripsi = $product["deskripsi"];
+                 $harga     = $product["harga"];
+                 $id        = $product["id_menu"];?>
                 <div class="col3">
                     <div class="food-card">
                         <div class="fc-image">
-                         <img src="gambar/<?php echo $product['gambar']; ?>" alt="<?php echo $product['nama_menu']; ?>"><br><br>
-                        </div>
+                        <img src="gambar/<?php echo $gambar; ?>" alt="<?php echo $namamenu; ?>"><br><br>                        </div>
                         <div class="fc-desc">
-                        <h3><?php echo $product["nama_menu"] . "<br>"; ?></h3>
-                        <p><?php echo  $product["deskripsi"] ;?></p>
+                        <h3><?php echo  $namamenu . "<br>"; ?></h3>
+                        <p><?php echo  $deskripsi ; ?></p>
                         </div>
                         <div class="fc-price">
-                        <div class="price-tag">Start from</div>
-                        <div class="price-num"><?php echo  $product["harga"] . "<br>"?> </div>
-                        </div>
-                        <div>
-                        <button class="btn-menu"><a href="hapus.php">Hapus</a></button> 
-                        <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
-                        </div>
-                        
+                        <div class="price-tag">Price :</div>
+                        <div class="price-num">Rp<?php echo  $harga . "<br>"?> </div>
+                    </div>
+                    <div>
+                    <button class="btn-menu"><a href="hapus.php">Hapus</a></button>
+                    <button class="btn-menu"><a href="edit_menu.php">Edit</a></button>
+                    </div>
                     </div>
                 </div>
             <?php endwhile ?>
