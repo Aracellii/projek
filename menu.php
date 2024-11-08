@@ -41,7 +41,6 @@
             </div>
             <?php while ($product = mysqli_fetch_assoc($result)): ?>
                 <div class="col3">
-                
                     <div class="food-card">
                         <div class="fc-image">
                         <img src="gambar/<?php echo $product['gambar']; ?>" alt="<?php echo $product['nama_menu']; ?>"><br><br>                        </div>
@@ -54,8 +53,8 @@
                         <div class="price-num">Rp<?php echo  $product["harga"] . "<br>"?> </div>
                     </div>
                     <div>
-                    <button class="btn-menu"><a href="hapus.php?id=<?php echo $product['id_menu']; ?>">Hapus</a></button>
-                    <button class="btn-menu"><a href="hapus.php?id=<?php echo $product['id_menu']; ?>">EDIT</a></button>
+                    <button class="btn-menu"><a href="hapus.php"<?php $id=$product["id_menu"]?>>Hapus</a></button>
+                    <button class="btn-menu"><a href="edit_menu.php"<?php $id=$product["id_menu"]?>>Edit</a></button>
                     </div>
                     </div>
                 </div>
@@ -69,23 +68,22 @@
             <div class="row">
             <?php while ($product = mysqli_fetch_assoc($hasil)): ?>
                 <div class="col3">
+                
                     <div class="food-card">
                         <div class="fc-image">
-                         <img src="gambar/<?php echo $product['gambar']; ?>" alt="<?php echo $product['nama_menu']; ?>"><br><br>
-                        </div>
+                        <img src="gambar/<?php echo $product['gambar']; ?>" alt="<?php echo $product['nama_menu']; ?>"><br><br>                        </div>
                         <div class="fc-desc">
-                        <h3><?php echo $product["nama_menu"] . "<br>"; ?></h3>
-                        <p><?php echo  $product["deskripsi"] ;?></p>
+                        <h3><?php echo  $product["nama_menu"] . "<br>"; $namamenu=$product["nama_menu"];?></h3>
+                        <p><?php echo  $product["deskripsi"] ; ?></p>
                         </div>
                         <div class="fc-price">
-                        <div class="price-tag">Start from</div>
-                        <div class="price-num"><?php echo  $product["harga"] . "<br>"?> </div>
-                        </div>
-                        <div>
-                        <button class="btn-menu"><a href="hapus.php">Hapus</a></button> 
-                        <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
-                        </div>
-                        
+                        <div class="price-tag">Price :</div>
+                        <div class="price-num">Rp<?php echo  $product["harga"] . "<br>"?> </div>
+                    </div>
+                    <div>
+                    <button class="btn-menu"><a href="hapus.php"<?php $id=$product["id_menu"]?>>Hapus</a></button>
+                    <button class="btn-menu"><a href="edit_menu.php"<?php $id=$product["id_menu"]?>>Edit</a></button>
+                    </div>
                     </div>
                 </div>
             <?php endwhile ?>
