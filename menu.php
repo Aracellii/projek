@@ -82,9 +82,10 @@
                         <div class="price-num"><?php echo  $product["harga"] . "<br>"?> </div>
                         </div>
                         <div>
-                        <button class="btn-menu">Hapus</button> 
-                        <button class="btn-menu">Edit </button>
+                        <button class="btn-menu"><a href="">Hapus</a></button> 
+                        <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
                         </div>
+                        
                     </div>
                 </div>
             <?php endwhile ?>
