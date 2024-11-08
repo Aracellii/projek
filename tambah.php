@@ -41,7 +41,7 @@
                 <label>Masukkan Gambar</label>
                 <div>
                     <label for="file-upload" class="custom-file-upload">Pilih Gambar </label>
-                    <input accept="image/png, image/gif, image/jpeg" required id="file-upload"name="gambar" value="" type="file" />
+                    <input accept="image/png, image/gif, image/jpeg, image/jpg" required id="file-upload"name="gambar" value="" type="file" />
                 </div>
                 <div>
                     <label class="">Kategori</label>
