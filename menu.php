@@ -57,8 +57,8 @@
                     <button class="btn-menu"><a href="hapus.php?id=<?php echo $product['id_menu']; ?>">Hapus</a></button>
                     <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
                         </div>
+                    </div>
                 </div>
-            </div>
             <?php endwhile ?>
          </div>
     </div>

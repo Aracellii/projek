@@ -29,13 +29,13 @@
 		if(isset($_GET['pesan'])){
 			if($_GET['pesan'] == "gagal")
 				{	
-				echo '<p style="text-align: center";> username dan password salah! </p>';		
+				echo '<p style="text-align: center";> 	</p>';		
 				}
 				else if($_GET['pesan'] == "logout"){
 				echo "Anda telah berhasil logout";
 				}else if($_GET['pesan'] == "belum_login")
 				{
-				echo "Anda harus login untuk mengakses halaman admin";
+				echo "Username atau Password salah!";
 				}
 		}
 		if (isset($_GET['pesan']) && $_GET['pesan'] == 'daftar_berhasil') {
