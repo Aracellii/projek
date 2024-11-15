@@ -1,0 +1,22 @@
+.container{
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.form-bayar{
+align-items: center;
+text-align: center;
+color: white;
+padding: 30px;
+    width: 400px;
+    height: 400px;
+    background: black;
+}
+
+input{
+    border-radius: 30px;
+    height: 20px;
+    }
+
+}

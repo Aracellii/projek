@@ -48,18 +48,19 @@
                 <div class="col3">
                     <div class="food-card">
                         <div class="fc-image">
-                        <img src="gambar/<?php echo $gambar; ?>" alt="<?php echo $namamenu; ?>"><br><br>                        </div>
+                        <img src="gambar/<?php echo $gambar; ?>" alt="<?php echo $namamenu; ?>"><br><br></div>
                         <div class="fc-desc">
                         <h3><?php echo  $namamenu . "<br>"; ?></h3>
                         <p><?php echo  $deskripsi ; ?></p>
                         </div>
                         <div class="fc-price">
                         <div class="price-tag">Price :</div>
-                        <div class="price-num">Rp<?php echo  $harga . "<br>"?> </div>
+                        <div class="price-num">Rp   <?php echo  $harga . "<br>"?> </div>
                     </div>
                     <div>
                     <button class="btn-menu"><a href="hapus.php">Hapus</a></button>
                     <button class="btn-menu"><a href="edit_menu.php">Edit</a></button>
+                    <button  class="btn-menu"><a href="pembayaran.php"> <img src="gambar/buy.png" alt=""></a></button>
                     </div>
                     </div>
                 </div>
@@ -88,6 +89,7 @@
                         <div>
                         <button class="btn-menu"><a href="hapus.php">Hapus</a></button> 
                         <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
+                        <button><a href="pembayaran.php"> <img src="gambar/buy.png" alt=""></a></button>
                         </div>
                         
                     </div>

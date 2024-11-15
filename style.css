@@ -101,6 +101,7 @@ p{
         color: black;
         background: red;
     }
+    
 }
 
 .img-responsive{
@@ -261,12 +262,12 @@ p{
 }
 
 .btn-menu{
-    background: white;
+    background: pink;
     font-size: medium;
     margin-top: 10px;
     color: black;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 20px 17px;
     border-radius: 5px;  
     cursor: pointer;
     transition-duration: 0.5s;
@@ -278,10 +279,14 @@ p{
     &:hover {
         a{
             color: white;
-        }
-        background: black;
+        } 
+        background: grey;   
     }
-        
+    img{
+        width: 20px;
+        height: 10px;
+       
+    }
 }
 
 .tambah-menu input[type="text"],
