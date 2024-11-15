@@ -5,18 +5,37 @@
 }
 
 .form-bayar{
-align-items: center;
-text-align: center;
-color: white;
-padding: 30px;
-    width: 400px;
+    padding: 5% 5% 30% 5%;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    color: black;
     height: 400px;
-    background: black;
+    background: pink;
+
 }
 
-input{
+
+.form-bayar-input{
+    margin: 10px;
+    width: 300px;
+    font-size: 20px;
+    padding: 20px;
     border-radius: 30px;
-    height: 20px;
+    &:hover{
+        background-color: grey;
     }
 
+}
+
+input[type="number"]{
+    width: 70px;
+}
+
+button:hover{
+
+    cursor: pointer;
+    transition: 1s;
+    background-color: black;
+    color: white;
 }
