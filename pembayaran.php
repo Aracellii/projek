@@ -1,3 +1,6 @@
+<?php 
+include 'prosespesan.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +16,7 @@
             <div class="form-bayar">
                 <H1>PESANAN ATAS NAMA USERNAMES</H1>
                 <div>
-                <select class="form-bayar-input" name="cars" id="cars">
+                <select class="form-bayar-input" name="pesanmakan" id="cars">
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
                     <option value="mercedes">AYAM BAKAR PEDAS  </option>
@@ -22,7 +25,7 @@
                 </div>
                 <input class="form-bayar-input" type="number" placeholder="jumlah">
                 <div>
-                <select class="form-bayar-input" name="cars" id="cars">
+                <select class="form-bayar-input" name="pesanminum" id="cars">
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
                     <option value="mercedes">es teh tawar ga pake gula</option>
