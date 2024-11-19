@@ -1,5 +1,5 @@
 <?php
-    $query = new mysqli('localhost', 'root', '', 'projek');
+    include 'cek_login.php';
     $namamenu = $_POST['namamenu'];
     $harga = $_POST['harga'];
     $kategori = $_POST['kategori'];
@@ -9,6 +9,6 @@
     $tempat = $_SERVER['DOCUMENT_ROOT'] . "/projek/gambar/"; 
     $simpan = $tempat . $namafile;
     move_uploaded_file($_FILES['gambar']['tmp_name'], $simpan);
-    $data = $query->query("INSERT INTO menu (nama_menu, jenis_menu, deskripsi,harga,gambar) VALUES ('$namamenu', '$kategori', '$deskripsi', '$harga', '$namafile');");
+    $data = $conn->query("INSERT INTO menu (nama_menu, jenis_menu, deskripsi,harga,gambar) VALUES ('$namamenu', '$kategori', '$deskripsi', '$harga', '$namafile');");
     header("location:menu.php")
 ?>

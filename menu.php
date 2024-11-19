@@ -1,4 +1,12 @@
-<?php include 'tampil.php';?>
+<?php include 'tampil.php';
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+if(!($_SESSION['login'])) {
+    header("Location: login.php?pesan=andabelumlogin");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +16,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!--header-->
+<!--header--> 
 <body>
     <!-- Header -->
      <div class="header">
@@ -31,6 +39,7 @@
     <h2>MENU MAKANAN</h2>
         <div class="container">
             <div class="row">
+                <?php if($_SESSION['role']==="admin"){?>
                 <div class="col3">
                     <div class="food-card">
                         <div class="add-menu">
@@ -39,6 +48,7 @@
                 </div>
             </div>
             </div>
+            <?php } ?>
             <?php while ($product = mysqli_fetch_assoc($result)): 
                  $gambar    = $product['gambar']; 
                  $namamenu  = $product["nama_menu"];
@@ -57,11 +67,13 @@
                         <div class="price-tag">Price :</div>
                         <div class="price-num">Rp   <?php echo  $harga . "<br>"?> </div>
                     </div>
+                    <?php if($_SESSION['role']==="admin"){ ?>
                     <div>
                     <button class="btn-menu"><a href="hapus.php">Hapus</a></button>
                     <button class="btn-menu"><a href="edit_menu.php">Edit</a></button>
                     <button  class="btn-menu"><a href="pembayaran.php"> <img src="gambar/buy.png" alt=""></a></button>
                     </div>
+                    <?php }?>
                     </div>
                 </div>
             <?php endwhile ?>
@@ -72,7 +84,14 @@
     <h2>MENU MINUMAN</h2>
         <div class="container">
             <div class="row">
-            <?php while ($product = mysqli_fetch_assoc($hasil)): ?>
+            
+            
+            <?php while ($product = mysqli_fetch_assoc($hasil)):
+                $gambar    = $product['gambar']; 
+                $namamenu  = $product["nama_menu"];
+                $deskripsi = $product["deskripsi"];
+                $harga     = $product["harga"];
+                $id        = $product["id_menu"];?> ?>
                 <div class="col3">
                     <div class="food-card">
                         <div class="fc-image">
@@ -101,3 +120,5 @@
 
 </body>
 </html>
+<?php 
+?>

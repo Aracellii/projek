@@ -1,5 +1,10 @@
-<?php include 'tampil.php';?>
-
+<?php include 'tampil.php';include 'cek_login.php';
+session_start();
+if(!($_SESSION['login'])) {
+    header("Location: login.php?pesan=andabelumlogin");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,9 +27,16 @@
                     <a href="">Daily Market</a>
                     <a href="menu.php">Catalog</a>
                 </div>
+                <?php if(!($_SESSION['login'])){?>
                 <div class="profile">
                     <a class="btn" href="login.php">Login</a>
                 </div>
+               <?php }?>
+               <?php if(($_SESSION['login'])){?>
+                <div class="profile">
+                    <a class="btn" href="logout.php">logout</a>
+                </div>
+               <?php }?>
             </div>
         </div>
      </div>
