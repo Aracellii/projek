@@ -33,11 +33,11 @@
                 </table>
                 
                 
-                <form action="proses_pembayaran.php" method="POST">
+                <form action="transaksi.php" method="POST">
                     <input type="hidden" name="id_menu" value="<?php echo $id_menu; ?>">
                     <input type="hidden" name="nama_menu" value="<?php echo $nama_menu; ?>">
                     <input type="hidden" name="harga" value="<?php echo $harga; ?>">
-
+                    
                     <label  for="jumlah">Jumlah:</label>
                     <input class="form-bayar-input" type="number" id="jumlah" name="jumlah" min="1" value="1">
                     <a href="transaksi.php"><button class="form-bayar-input" type="submit">PESAN SEKARANG</button></a>

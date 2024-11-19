@@ -4,6 +4,7 @@ if (isset($_POST['id_menu'], $_POST['nama_menu'], $_POST['harga'])) {
     $id_menu = $_POST['id_menu'];
     $nama_menu = $_POST['nama_menu'];
     $harga = $_POST['harga'];
+    $jumlah = $_POST['jumlah'];
     // Menghitung total harga (anggap total yang dimaksud adalah harga yang langsung diterima)
     $total = $harga;
     // Koneksi ke database
@@ -17,11 +18,11 @@ if (isset($_POST['id_menu'], $_POST['nama_menu'], $_POST['harga'])) {
             VALUES ('$id_menu', '$nama_menu', '$harga',  '{$_SESSION['id']}')";
 
     if ($query->query($sql) === TRUE) {
-        echo "<h1>Detail Pembayaran</h1>";
-        echo "<p>Menu  : $nama_menu</p>";
-        echo "<p>Harga : Rp $harga</p>";
-        echo "<p>Total : Rp $total</p>";
-        echo "<p>Terima kasih, " . $_SESSION['username'] . ". Pembayaran Anda telah dicatat.</p>";
+         "<h1>Detail Pembayaran</h1>";
+         "<p>Menu  : $nama_menu</p>";
+         "<p>Harga : Rp $harga</p>";
+         "<p>Total : Rp $total</p>";
+         "<p>Terima kasih, " . $_SESSION['username'] . ". Pembayaran Anda telah dicatat.</p>";
     } else {
         echo "Error: " . $sql . "<br>" . $query->error;
     }
@@ -51,25 +52,23 @@ if (isset($_POST['id_menu'], $_POST['nama_menu'], $_POST['harga'])) {
             <tr>
                 <td>Name</td>
                 <td>:</td>
-                <td>makananmu</td>
+                <td><?php echo $nama_menu; ?></td>
             </tr>
             <tr>
                 <td>Harga Satuan</td>
                 <td>:</td>
-
-                <td>1jt</td>
+                <td><?php echo $harga; ?></td>
             </tr>
             <tr>
                 <td>Banyak Pesanan</td>
                 <td>:</td>
                 
-                <td>50 pcs</td>
+                <td><?php echo $jumlah; ?><td>
             </tr>
             <tr>
                 <td>Total Harga</td>
                 <td>:</td>
-                
-                <td>50jt </td>
+                <td><?php echo $total; ?></td>
             </tr>
         </table>
         <a href=""><button class="btn">pesan lagi?</button></a>
