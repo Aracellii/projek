@@ -78,14 +78,15 @@ if(!($_SESSION['login'])) {
                         <div class="price-tag">Price :</div>
                         <div class="price-num">Rp   <?php echo  $harga . "<br>"?> </div>
                     </div>
-                    <?php if($_SESSION['role']==="admin"){ ?>
+    
                     <div>
-                    <button class="btn-menu"><a href="hapus.php">Hapus</a></button>
-                    <button class="btn-menu"><a href="edit_menu.php">Edit</a></button><?php }?>
-                    <button><a href="pembayaran.php"> <img src="icon/buy.png" alt=""></a></button>
-                    <button class="btn-menu"><a href="edit_menu.php">Edit</a></button>
-                    <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="gambar/buy.png" alt="Beli"></a></button>                        </div>
-                    </div>
+                    <?php if($_SESSION['role']==="admin"){ ?>
+                        <button class="btn-menu"><a href="hapus.php">Hapus</a></button> 
+                        <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
+                        <?php } ?>
+                        <?php if($_SESSION['role']==="user"){ ?>
+                        <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="icon/buy.png" alt="Beli"></a></button>
+                        <?php } ?>
                     </div>
                 </div>
             <?php endwhile ?>
@@ -102,7 +103,7 @@ if(!($_SESSION['login'])) {
                     <div class="food-card">
                         <div class="add-menu">
                         <H3>BUY</H3>
-                        <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="gambar/buy.png" alt="Beli">                    </div>
+                        <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="gambar/buy.png" alt="Beli"></a></button>                    </div>
                     </div>
                     </div>
                      <?php } ?>
@@ -127,9 +128,13 @@ if(!($_SESSION['login'])) {
                         <div class="price-num"><?php echo  $product["harga"] . "<br>"?> </div>
                         </div>
                         <div>
+                        <?php if($_SESSION['role']==="admin"){ ?>
                         <button class="btn-menu"><a href="hapus.php">Hapus</a></button> 
                         <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
-                        <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="gambar/buy.png" alt="Beli"></a></button>
+                        <?php } ?>
+                        <?php if($_SESSION['role']==="user"){ ?>
+                        <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="icon/buy.png" alt="Beli"></a></button>
+                        <?php } ?>
                     </div>
                         
                     </div>
