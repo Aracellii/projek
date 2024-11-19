@@ -6,22 +6,24 @@
 		$query = new mysqli('localhost', 'root', '', 'projek');
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-		$data = $query->query("SELECT 'user' AS role FROM user WHERE username='$username' AND password='$password'");
+		$data = $query->query("SELECT * FROM user WHERE username='$username' AND password='$password'");
 		if ($data->num_rows > 0) {
 			$_SESSION['username'] = $username;
-			$role = "user";
+			$user = $data->fetch_assoc();
+			$_SESSION['id'] = $user['id_use'];
 			$_SESSION['login'] = true;
-			$_SESSION['role'] = $role; // Menyimpan role ke session
+			$_SESSION['role'] = "user"; // Menyimpan role ke session
 			header("Location: main.php");
 			exit();
 		} 
 			// Menyeleksi data dari tabel 'admin'
-		$dataadmin = $query->query("SELECT 'admin' AS role FROM admin WHERE username='$username' AND password='$password'");
+		$dataadmin = $query->query("SELECT * FROM admin WHERE username='$username' AND password='$password'");
 		if ($dataadmin->num_rows > 0) {
 				$_SESSION['username'] = $username;
-				$role = "admin";
+				$admin = $dataadmin->fetch_assoc(); 
+				$_SESSION['id'] = $admin['id_admin'];
 				$_SESSION['login'] = true;
-				$_SESSION['role'] = $role; // Menyimpan role ke session
+				$_SESSION['role'] = "admin"; // Menyimpan role ke session
 				header("Location: main.php");
 				exit();
 			}

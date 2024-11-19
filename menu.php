@@ -55,7 +55,7 @@ if(!($_SESSION['login'])) {
                     <div class="food-card">
                         <div class="add-menu">
                         <H3>BUY</H3>
-                        <a href="pembayaran.php"> <img src="icon/buy.png" alt=""> </a>
+                        <a href="pembayaran.php"> <img src="gambar/plus.png" alt=""> </a>
                     </div>
                     </div>
                     </div>
@@ -84,9 +84,15 @@ if(!($_SESSION['login'])) {
                     <div>
                     <button class="btn-menu"><a href="hapus.php">Hapus</a></button>
                     <button class="btn-menu"><a href="edit_menu.php">Edit</a></button><?php }?>
+<<<<<<< HEAD
+                    <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo urlencode($namamenu); ?>&harga=<?php echo $harga; ?>"><img src="gambar/buy.png" alt="Beli">
+    </a>
+</button>
+=======
                     <button><a href="pembayaran.php"> <img src="gambar/buy.png" alt=""></a></button>
                     <button class="btn-menu"><a href="edit_menu.php">Edit</a></button>
                     <button  class="btn-menu"><a href="pemesanan.php"> <img src="icon/buy.png" alt=""></a></button>
+>>>>>>> 4dce0f0a421aba79fa856452b197c9754c0e1926
                     </div>
                     </div>
                 </div>
@@ -115,7 +121,7 @@ if(!($_SESSION['login'])) {
                 $namamenu  = $product["nama_menu"];
                 $deskripsi = $product["deskripsi"];
                 $harga     = $product["harga"];
-                $id        = $product["id_menu"];?> ?>
+                $id        = $product["id_menu"];?> 
                 <div class="col3">
                     <div class="food-card">
                         <div class="fc-image">
@@ -132,7 +138,11 @@ if(!($_SESSION['login'])) {
                         <div>
                         <button class="btn-menu"><a href="hapus.php">Hapus</a></button> 
                         <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
+<<<<<<< HEAD
+                        <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="gambar/buy.png" alt="Beli">
+=======
                         <button><a href="pemesanan.php"> <img src="gambar/buy.png" alt=""></a></button>
+>>>>>>> 4dce0f0a421aba79fa856452b197c9754c0e1926
                         </div>
                         
                     </div>
