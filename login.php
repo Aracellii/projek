@@ -25,6 +25,9 @@
 				header("Location: main.php");
 				exit();
 			}
+		else{
+			header("Location: login.php?pesan=belum_login");
+		}
 		}
 	?>
 	<!DOCTYPE html>

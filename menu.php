@@ -70,10 +70,9 @@ if(!($_SESSION['login'])) {
                     <?php if($_SESSION['role']==="admin"){ ?>
                     <div>
                     <button class="btn-menu"><a href="hapus.php">Hapus</a></button>
-                    <button class="btn-menu"><a href="edit_menu.php">Edit</a></button>
-                    <button  class="btn-menu"><a href="pembayaran.php"> <img src="gambar/buy.png" alt=""></a></button>
+                    <button class="btn-menu"><a href="edit_menu.php">Edit</a></button><?php }?>
+                    <button><a href="pembayaran.php"> <img src="gambar/buy.png" alt=""></a></button>
                     </div>
-                    <?php }?>
                     </div>
                 </div>
             <?php endwhile ?>
