@@ -1,4 +1,4 @@
 <?php
-include 'cek_login.php';
+include 'db.php';
 $kueri = "SELECT FROM menu where    ";
 ?>

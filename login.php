@@ -1,6 +1,6 @@
 	<?php
 	session_start();
-	include 'cek_login.php';
+	include 'db.php';
 	if($_SERVER['REQUEST_METHOD'] === 'POST') {
 		// Menyeleksi data dari tabel 'user'
 		$query = new mysqli('localhost', 'root', '', 'projek');

@@ -1,6 +1,6 @@
 <?php 
 include 'prosespesan.php';
-include 'cek_login.php';
+include 'db.php';
 
 
 ?>

@@ -1,5 +1,5 @@
 <?php
-    include 'cek_login.php';
+    include 'db.php';
     $namamenu = $_POST['namamenu'];
     $harga = $_POST['harga'];
     $kategori = $_POST['kategori'];

@@ -1,4 +1,4 @@
-<?php include 'tampil.php';include 'cek_login.php';
+<?php include 'tampil.php';include 'db.php';
 session_start();
 if(!($_SESSION['login'])) {
     header("Location: login.php?pesan=andabelumlogin");

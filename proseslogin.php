@@ -1,5 +1,5 @@
 <?php
-$login = include 'cek_login.php';
+$login = include 'db.php';
 if ($login) {
     header("Location: main.php");
     exit();
