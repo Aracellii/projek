@@ -10,13 +10,13 @@
     <div class="container">
         <div class="pembayaran">
             <h1>PEMESANAN</h1>
-            <div class="form-bayar">
+            <div class="form-bayar" action="pembayaran.php">
                 <H1>PESANAN ATAS NAMA USERNAMES</H1>
                 <div>
                 <select class="form-bayar-input" name="cars" id="cars">
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
-                    <option value="mercedes">AYAM BAKAR PEDAS  </option>
+                    <option value="mercedes">AYAM BAKAR PEDAS <s></s></option>
                     <option value="audi">Audi</option>
                 </select>
                 </div>
@@ -30,7 +30,7 @@
                 </select>
                 </div>
                 <input class="form-bayar-input" type="number">
-                <button class="form-bayar-input" type="submit">PESAN SEKARANG</button>
+                <a href="pembayaran.php"><button class="form-bayar-input" type="submit">PESAN SEKARANG</button></a>
             </div>
         </div>
     </div>
