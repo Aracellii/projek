@@ -60,8 +60,6 @@ if(!($_SESSION['login'])) {
                     </div>
                     </div>
                      <?php } ?>
-
-
             <?php while ($product = mysqli_fetch_assoc($result)): 
                  $gambar    = $product['gambar']; 
                  $namamenu  = $product["nama_menu"];
@@ -86,7 +84,7 @@ if(!($_SESSION['login'])) {
                     <button class="btn-menu"><a href="edit_menu.php">Edit</a></button><?php }?>
                     <button><a href="pembayaran.php"> <img src="icon/buy.png" alt=""></a></button>
                     <button class="btn-menu"><a href="edit_menu.php">Edit</a></button>
-                    <button  class="btn-menu"><a href="pemesanan.php"> <img src="icon/buy.png" alt=""></a></button>
+                    <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="gambar/buy.png" alt="Beli">                        </div>
                     </div>
                     </div>
                 </div>

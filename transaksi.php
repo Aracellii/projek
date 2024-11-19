@@ -70,7 +70,7 @@ if (isset($_POST['id_menu'], $_POST['nama_menu'], $_POST['harga'])) {
                 <td><?php echo $total; ?></td>
             </tr>
         </table>
-        <a href=""><button class="btn">pesan lagi?</button></a>
+        <a href="menu.php"><button class="btn">pesan lagi?</button></a>
         </div>
         </div>
         </div>

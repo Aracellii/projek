@@ -32,7 +32,6 @@
                 </tr>
                 </table>
                 
-                
                 <form action="transaksi.php" method="POST">
                     <input type="hidden" name="id_menu" value="<?php echo $id_menu; ?>">
                     <input type="hidden" name="nama_menu" value="<?php echo $nama_menu; ?>">
