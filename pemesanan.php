@@ -1,30 +1,3 @@
-<?php
-session_start();
-if (isset($_GET['id_menu'], $_GET['nama_menu'], $_GET['harga'])) {
-    $id_menu = $_GET['id_menu'];
-    $nama_menu = $_GET['nama_menu'];
-    $harga = $_GET['harga'];
-
-    echo "<h1>Pembayaran</h1>";
-    echo "<p>Menu: $nama_menu</p>";
-    echo "<p>Harga: Rp $harga</p>";
-    ?>
-    <form action="proses_pembayaran.php" method="POST">
-        <input type="hidden" name="id_menu" value="<?php echo $id_menu; ?>">
-        <input type="hidden" name="nama_menu" value="<?php echo $nama_menu; ?>">
-        <input type="hidden" name="harga" value="<?php echo $harga; ?>">
-
-        <label for="jumlah">Jumlah:</label>
-        <input type="number" id="jumlah" name="jumlah" min="1" value="1">
-        <button type="submit">Bayar</button>
-    </form>
-    <?php
-} else {
-    echo "Data tidak ditemukan.";
-}
-?>
-<<<<<<< HEAD
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,13 +10,13 @@ if (isset($_GET['id_menu'], $_GET['nama_menu'], $_GET['harga'])) {
     <div class="container">
         <div class="pembayaran">
             <h1>PEMESANAN</h1>
-            <div class="form-bayar">
+            <div class="form-bayar" action="pembayaran.php">
                 <H1>PESANAN ATAS NAMA USERNAMES</H1>
                 <div>
                 <select class="form-bayar-input" name="cars" id="cars">
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
-                    <option value="mercedes">AYAM BAKAR PEDAS  </option>
+                    <option value="mercedes">AYAM BAKAR PEDAS <s></s></option>
                     <option value="audi">Audi</option>
                 </select>
                 </div>
@@ -57,7 +30,7 @@ if (isset($_GET['id_menu'], $_GET['nama_menu'], $_GET['harga'])) {
                 </select>
                 </div>
                 <input class="form-bayar-input" type="number">
-                <button class="form-bayar-input" type="submit">PESAN SEKARANG</button>
+                <a href="pembayaran.php"><button class="form-bayar-input" type="submit">PESAN SEKARANG</button></a>
             </div>
         </div>
     </div>
@@ -65,4 +38,3 @@ if (isset($_GET['id_menu'], $_GET['nama_menu'], $_GET['harga'])) {
 
 </body>
 </html>
->>>>>>> 4dce0f0a421aba79fa856452b197c9754c0e1926
