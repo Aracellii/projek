@@ -23,8 +23,6 @@ if (isset($_GET['id_menu'], $_GET['nama_menu'], $_GET['harga'])) {
     echo "Data tidak ditemukan.";
 }
 ?>
-<<<<<<< HEAD
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,4 +63,3 @@ if (isset($_GET['id_menu'], $_GET['nama_menu'], $_GET['harga'])) {
 
 </body>
 </html>
->>>>>>> 4dce0f0a421aba79fa856452b197c9754c0e1926
