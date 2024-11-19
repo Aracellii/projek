@@ -19,9 +19,7 @@ if (isset($_GET['id_menu'], $_GET['nama_menu'], $_GET['harga'])) {
         <button type="submit">Bayar</button>
     </form>
     <?php
-} else {
-    echo "Data tidak ditemukan.";
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -63,3 +61,5 @@ if (isset($_GET['id_menu'], $_GET['nama_menu'], $_GET['harga'])) {
 
 </body>
 </html>
+<?php }
+?>
