@@ -4,26 +4,30 @@ body{
     padding: 0;
     font-family: "Poppins", sans-serif;
     background: linear-gradient(to top, #8b0000 0%, #da8aad 100%);
-    min-width: 1155px;
+    
+    display: flex;
+    justify-content: center;
     height: auto;
 }
 
 .container{
-    align-items: center;
-    text-align: center;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    
 }
 
 .form-bayar{
+    margin-top: 30px;
     padding: 5% 5% 30% 5%;
     border-radius: 30px;
     align-items: center;
     text-align: center;
+    width: 500px;
     color: black;
-    height: 400px;
+    height: 450px;
     background: pink;
     margin-bottom: 100px;
-
 }
 
 
@@ -35,7 +39,8 @@ body{
     border-radius: 30px;
     &:hover{
         transition: 1s;
-        background-color: grey;
+        color: white;
+        background-color:black;
     }
 
 }
@@ -50,4 +55,25 @@ button:hover{
     transition: 1s;
     background-color: black;
     color: white;
+}
+
+table{
+    
+    width: 400px;
+    font-size: 25px;
+    border-radius: 20px;
+    border-color: black;
+    border: 1px solid;
+    height: 150px;
+    background: white;
+    color: black;
+    margin: 50px;
+    text-align: center;
+    td{
+        padding: 10px;
+    }
+}
+
+h1{
+    text-align: center;
 }
