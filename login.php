@@ -9,14 +9,11 @@
 		if ($query->connect_error) {
 			die("Koneksi gagal: " . $query->connect_error);
 		}
-	
 		// Mengambil data dari form
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-	
 		// Menyeleksi data dari tabel 'user'
 		$data = $query->query("SELECT * FROM user WHERE username='$username' AND password='$password'");
-
 		// Jika data ditemukan di tabel 'user'
 		if ($data->num_rows > 0) {
 			$_SESSION['username'] = $username;
@@ -27,10 +24,8 @@
 			header("Location: main.php");
 			exit();
 		}
-	
 		// Menyeleksi data dari tabel 'admin'
 		$dataadmin = $query->query("SELECT * FROM admin WHERE username='$username' AND password='$password'");
-	
 		// Jika data ditemukan di tabel 'admin'
 		if ($dataadmin->num_rows > 0) {
 			$_SESSION['username'] = $username;

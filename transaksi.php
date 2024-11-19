@@ -15,7 +15,6 @@ if (isset($_POST['id_menu'], $_POST['nama_menu'], $_POST['harga'])) {
     // Menyimpan data pembayaran ke dalam tabel 'pembayaran'
     $sql = "INSERT INTO pembayaran (id_menu, nama_menu, harga,id_user) 
             VALUES ('$id_menu', '$nama_menu', '$harga',  '{$_SESSION['id']}')";
-
     if ($query->query($sql) === TRUE) {
         echo "<h1>Detail Pembayaran</h1>";
         echo "<p>Menu  : $nama_menu</p>";
