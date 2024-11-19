@@ -84,7 +84,7 @@ if(!($_SESSION['login'])) {
                     <button class="btn-menu"><a href="edit_menu.php">Edit</a></button><?php }?>
                     <button><a href="pembayaran.php"> <img src="icon/buy.png" alt=""></a></button>
                     <button class="btn-menu"><a href="edit_menu.php">Edit</a></button>
-                    <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="gambar/buy.png" alt="Beli">                        </div>
+                    <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="gambar/buy.png" alt="Beli"></a></button>                        </div>
                     </div>
                     </div>
                 </div>
@@ -129,7 +129,8 @@ if(!($_SESSION['login'])) {
                         <div>
                         <button class="btn-menu"><a href="hapus.php">Hapus</a></button> 
                         <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
-                        <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="gambar/buy.png" alt="Beli">                        </div>
+                        <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="gambar/buy.png" alt="Beli"></a></button>
+                    </div>
                         
                     </div>
                 </div>
