@@ -1,5 +1,5 @@
 <?php 
-include 'cek_login.php';
+include 'db.php';
 if (!$conn) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }

@@ -44,11 +44,24 @@ if(!($_SESSION['login'])) {
                     <div class="food-card">
                         <div class="add-menu">
                         <H3>Add Menu:</H3>
-                        <a href="tambah.php"> <img src="icon/plus.png" alt=""> </a>
-                </div>
-            </div>
-            </div>
-            <?php } ?>
+                        <a href="tambah.php"> <img src="gambar/plus.png" alt=""> </a>
+                    </div>
+                    </div>
+                    </div>
+                     <?php } ?>
+                   
+                     <?php if($_SESSION['role']==="user"){?>
+                <div class="col3">
+                    <div class="food-card">
+                        <div class="add-menu">
+                        <H3>BUY</H3>
+                        <a href="pembayaran.php"> <img src="gambar/plus.png" alt=""> </a>
+                    </div>
+                    </div>
+                    </div>
+                     <?php } ?>
+
+
             <?php while ($product = mysqli_fetch_assoc($result)): 
                  $gambar    = $product['gambar']; 
                  $namamenu  = $product["nama_menu"];
@@ -70,10 +83,11 @@ if(!($_SESSION['login'])) {
                     <?php if($_SESSION['role']==="admin"){ ?>
                     <div>
                     <button class="btn-menu"><a href="hapus.php">Hapus</a></button>
+                    <button class="btn-menu"><a href="edit_menu.php">Edit</a></button><?php }?>
+                    <button><a href="pembayaran.php"> <img src="gambar/buy.png" alt=""></a></button>
                     <button class="btn-menu"><a href="edit_menu.php">Edit</a></button>
                     <button  class="btn-menu"><a href="pemesanan.php"> <img src="icon/buy.png" alt=""></a></button>
                     </div>
-                    <?php }?>
                     </div>
                 </div>
             <?php endwhile ?>
