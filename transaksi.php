@@ -1,3 +1,34 @@
+<?php
+session_start();
+if (isset($_POST['id_menu'], $_POST['nama_menu'], $_POST['harga'])) {
+    $id_menu = $_POST['id_menu'];
+    $nama_menu = $_POST['nama_menu'];
+    $harga = $_POST['harga'];
+    // Menghitung total harga (anggap total yang dimaksud adalah harga yang langsung diterima)
+    $total = $harga;
+    // Koneksi ke database
+    $query = new mysqli('localhost', 'root', '', 'projek');
+    // Cek koneksi
+    if ($query->connect_error) {
+        die("Koneksi gagal: " . $query->connect_error);
+    }
+    // Menyimpan data pembayaran ke dalam tabel 'pembayaran'
+    $sql = "INSERT INTO pembayaran (id_menu, nama_menu, harga,id_user) 
+            VALUES ('$id_menu', '$nama_menu', '$harga',  '{$_SESSION['id']}')";
+
+    if ($query->query($sql) === TRUE) {
+        echo "<h1>Detail Pembayaran</h1>";
+        echo "<p>Menu  : $nama_menu</p>";
+        echo "<p>Harga : Rp $harga</p>";
+        echo "<p>Total : Rp $total</p>";
+        echo "<p>Terima kasih, " . $_SESSION['username'] . ". Pembayaran Anda telah dicatat.</p>";
+    } else {
+        echo "Error: " . $sql . "<br>" . $query->error;
+    }
+    // Menutup koneksi
+    $query->close();
+} 
+?>
 
 <!DOCTYPE html>
 <html lang="en">

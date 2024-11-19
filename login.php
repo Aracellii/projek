@@ -1,32 +1,46 @@
 	<?php
 	session_start();
 	include 'db.php';
-	if($_SERVER['REQUEST_METHOD'] === 'POST') {
-		// Menyeleksi data dari tabel 'user'
+	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+		// Menyambung ke database
 		$query = new mysqli('localhost', 'root', '', 'projek');
+	
+		// Memastikan koneksi berhasil
+		if ($query->connect_error) {
+			die("Koneksi gagal: " . $query->connect_error);
+		}
+	
+		// Mengambil data dari form
 		$username = $_POST['username'];
 		$password = $_POST['password'];
+	
+		// Menyeleksi data dari tabel 'user'
 		$data = $query->query("SELECT * FROM user WHERE username='$username' AND password='$password'");
+
+		// Jika data ditemukan di tabel 'user'
 		if ($data->num_rows > 0) {
 			$_SESSION['username'] = $username;
 			$user = $data->fetch_assoc();
-			$_SESSION['id'] = $user['id_use'];
+			$_SESSION['id'] = $user['id_user'];
 			$_SESSION['login'] = true;
 			$_SESSION['role'] = "user"; // Menyimpan role ke session
 			header("Location: main.php");
 			exit();
-		} 
-			// Menyeleksi data dari tabel 'admin'
+		}
+	
+		// Menyeleksi data dari tabel 'admin'
 		$dataadmin = $query->query("SELECT * FROM admin WHERE username='$username' AND password='$password'");
+	
+		// Jika data ditemukan di tabel 'admin'
 		if ($dataadmin->num_rows > 0) {
-				$_SESSION['username'] = $username;
-				$admin = $dataadmin->fetch_assoc(); 
-				$_SESSION['id'] = $admin['id_admin'];
-				$_SESSION['login'] = true;
-				$_SESSION['role'] = "admin"; // Menyimpan role ke session
-				header("Location: main.php");
-				exit();
-			}
+			$_SESSION['username'] = $username;
+			$admin = $dataadmin->fetch_assoc();
+			$_SESSION['id'] = $admin['id_admin'];
+			$_SESSION['login'] = true;
+			$_SESSION['role'] = "admin"; // Menyimpan role ke session
+			header("Location: main.php");
+			exit();
+		}
 		else{
 			header("Location: login.php?pesan=belum_login");
 		}

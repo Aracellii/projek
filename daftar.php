@@ -18,10 +18,8 @@
             </div>
         </div>
     </div>
-		
 <!--Login Card-->
 <form method="POST" action="proses_daftar.php">
-		
 <form-body>
 	<div class="login-card">
     	<h2>Register</h2>
