@@ -45,10 +45,23 @@ if(!($_SESSION['login'])) {
                         <div class="add-menu">
                         <H3>Add Menu:</H3>
                         <a href="tambah.php"> <img src="gambar/plus.png" alt=""> </a>
-                </div>
-            </div>
-            </div>
-            <?php } ?>
+                    </div>
+                    </div>
+                    </div>
+                     <?php } ?>
+                   
+                     <?php if($_SESSION['role']==="user"){?>
+                <div class="col3">
+                    <div class="food-card">
+                        <div class="add-menu">
+                        <H3>BUY</H3>
+                        <a href="pembayaran.php"> <img src="gambar/plus.png" alt=""> </a>
+                    </div>
+                    </div>
+                    </div>
+                     <?php } ?>
+
+
             <?php while ($product = mysqli_fetch_assoc($result)): 
                  $gambar    = $product['gambar']; 
                  $namamenu  = $product["nama_menu"];
