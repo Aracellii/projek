@@ -332,3 +332,27 @@ input[type="file"] {
     font-size: 1em;
     margin-top: 5px;
   }
+  
+.transaksi{
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    padding: 5% 5% 25% 5%;
+    border-radius: 30px;
+    header{
+        margin-bottom: 20px;
+    }
+    .transaksi-rincian{
+    table{
+        border-radius: 20px;
+        font-size: 30px;
+        color: white;
+        background-color: black;
+        margin-bottom: 20px;
+        td{
+            padding: 10px;
+        }
+    }
+   
+}
+}

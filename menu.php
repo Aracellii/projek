@@ -44,7 +44,7 @@ if(!($_SESSION['login'])) {
                     <div class="food-card">
                         <div class="add-menu">
                         <H3>Add Menu:</H3>
-                        <a href="tambah.php"> <img src="gambar/plus.png" alt=""> </a>
+                        <a href="tambah.php"> <img src="icon/plus.png" alt=""> </a>
                     </div>
                     </div>
                     </div>
@@ -55,7 +55,7 @@ if(!($_SESSION['login'])) {
                     <div class="food-card">
                         <div class="add-menu">
                         <H3>BUY</H3>
-                        <a href="pembayaran.php"> <img src="gambar/plus.png" alt=""> </a>
+                        <a href="pembayaran.php"> <img src="icon/buy.png" alt=""> </a>
                     </div>
                     </div>
                     </div>
@@ -96,9 +96,19 @@ if(!($_SESSION['login'])) {
 </div>
 <div class="food">
     <h2>MENU MINUMAN</h2>
+    
         <div class="container">
             <div class="row">
-            
+            <?php if($_SESSION['role']==="user"){?>
+                <div class="col3">
+                    <div class="food-card">
+                        <div class="add-menu">
+                        <H3>BUY</H3>
+                        <a href="pembayaran.php"> <img src="icon/buy.png" alt=""> </a>
+                    </div>
+                    </div>
+                    </div>
+                     <?php } ?>
             
             <?php while ($product = mysqli_fetch_assoc($hasil)):
                 $gambar    = $product['gambar']; 

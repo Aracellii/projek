@@ -36,7 +36,7 @@ include 'db.php';
                 </select>
                 </div>
                 <input class="form-bayar-input" type="number">
-                <button class="form-bayar-input" type="submit">PESAN SEKARANG</button>
+                <a href="transaksi.php"><button class="form-bayar-input" type="submit">PESAN SEKARANG</button></a>
             </div>
         </div>
     </div>
