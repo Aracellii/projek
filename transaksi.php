@@ -45,6 +45,7 @@ if (isset($_POST['id_menu'], $_POST['nama_menu'], $_POST['harga'])) {
         <h1>Payment Summary</h1>
         <p>Enjoy your meals!</p>
     </header>
+    
         <div class="transaksi-rincian">
         <table >
             <tr>
