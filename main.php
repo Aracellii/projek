@@ -19,7 +19,7 @@ if(!($_SESSION['login'])) {
         <div class="nav-container">
             <div class="nav">
                 <div class="nav-brand">
-                    <h1><a href="">Food<span>Stall</span></a></h1>
+                    <h1><a href="">Makanan<span>KU</span></a></h1>
                 </div>
                 <div class="nav-menu">
                     <a href="">Home</a>
@@ -46,15 +46,15 @@ if(!($_SESSION['login'])) {
             <div class="row ai-center" >
                 <div class="col4">
                     <div class="hero-desc">
-                        <h1>Makan Cepat</h1>
-                        <h1><span>Makanku Makananmu</span></h1>
-                        <p>Restoran Makanku adalah tempat makan yang menyajikan berbagai hidangan dengan cepat dan praktis, ideal untuk pelanggan </div>
-                        </p>
+                    <h1>MakananKu </h1>
+                        <h1><span>MakananKu MakananMu</span></h1>
+                        <p>Restoran Makanku adalah tempat makan yang menyajikan berbagai hidangan dengan cepat dan praktis, ideal untuk pelanggan</p>
+                       
                         <div class="spacer30"></div>
                         <a href="#" onclick="goToSection()" class="btn">Lihat Menu</a>
                     </div>
                 </div>
-                <div>
+                <div class="col8">
                     <img src="gambar/utama.png" alt="" class="img-responsive">
                 </div>
             </div>

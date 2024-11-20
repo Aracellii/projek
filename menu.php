@@ -78,7 +78,7 @@ if(!($_SESSION['login'])) {
                         <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
                         <?php } ?>
                         <?php if($_SESSION['role']==="user"){ ?>
-                        <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="icon/buy.png" alt="Beli"></a></button>
+                        <button class="btn-menu"><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="icon/buy.png" alt="Beli"></a></button>
                         <?php } ?>
                     </div>
                 </div>
