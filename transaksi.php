@@ -5,7 +5,7 @@ if (isset($_POST['id_menu'], $_POST['nama_menu'], $_POST['harga'])) {
     $nama_menu = $_POST['nama_menu'];
     $harga = $_POST['harga'];
     $jumlah = $_POST['jumlah'];
-    // Menghitung total harga (anggap total yang dimaksud adalah harga yang langsung diterima)
+    // Menghitung total harga 
     $total = $jumlah*$harga;
     // Koneksi ke database
     $query = new mysqli('localhost', 'root', '', 'projek');
