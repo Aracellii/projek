@@ -29,7 +29,7 @@
     <div class="container-menu">
         <div class="tambah-menu">
         <h1>Edit Menu</h1>
-            <form action="prosesmenu.php" method="POST" enctype="multipart/form-data".>
+            <form action="edit.php" method="POST" enctype="multipart/form-data".>
                 <div>
                     <label class="">Nama Menu</label>    
                     <input  required class="" type="text" placeholder="Nama Menu" name="namamenu" value="">
