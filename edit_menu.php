@@ -1,4 +1,6 @@
-
+<?php
+$id_menu = $_GET['id_menu'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +51,8 @@
                             <option name="minuman" value="minuman">Minuman</option>
                         </select>
                 </div>
-                <div>
+                <div>   
+                      <input type="hidden" name="id_menu" value="<?php echo $id_menu; ?>">
                         <label for="" class="form-label"style="">Deskripsi</label>
                         <input class="" type="text" placeholder="Deskripsi"  name="deskripsi" value="">
                 </div>

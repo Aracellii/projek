@@ -73,7 +73,7 @@ if(!($_SESSION['login'])) {
                     <div>
                     <?php if($_SESSION['role']==="admin"){ ?>
                         <button class="btn-menu"><a href="hapus.php">Hapus</a></button> 
-                        <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
+                        <button class="btn-menu"><a href="edit_menu.php?id_menu=<?php echo $id; ?>">Edit</a></button>
                         <?php } ?>
                         <?php if($_SESSION['role']==="user"){ ?>
                         <button class="btn-menu"><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="icon/buy.png" alt="Beli"></a></button>
@@ -112,7 +112,7 @@ if(!($_SESSION['login'])) {
                         <div>
                         <?php if($_SESSION['role']==="admin"){ ?>
                         <button class="btn-menu"><a href="hapus.php">Hapus</a></button> 
-                        <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
+                        <button class="btn-menu"><a href="edit_menu.php?id_menu=<?php echo $id;?>">Edit</a></button>
                         <?php } ?>
                         <?php if($_SESSION['role']==="user"){ ?>
                         <button class="btn-menu"><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="icon/buy.png" alt="Beli"></a></button>

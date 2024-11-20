@@ -5,7 +5,7 @@
     $kategori = $_POST['kategori'];
     $namafile = $_FILES['gambar']['name'];
     $deskripsi = $_POST['deskripsi'];
-    echo "Nama file yang di-upload: " . $namafile;
+    $id_menu = $_POST['id_menu'];
     $tempat = $_SERVER['DOCUMENT_ROOT'] . "/projek/gambar/"; 
     $simpan = $tempat . $namafile;
     move_uploaded_file($_FILES['gambar']['tmp_name'], $simpan);
@@ -16,5 +16,6 @@
         harga = '$harga', 
         gambar = '$namafile' 
     WHERE id_menu = '$id_menu';");
-header("location:menu.php")
+header("location:menu.php");
+exit();
 ?>
