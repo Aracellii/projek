@@ -23,12 +23,10 @@ if(!($_SESSION['login'])) {
         <div class="nav-container">
             <div class="nav">
                 <div class="nav-brand">
-                    <h1><a href="">Food<span>Stall</span></a></h1>
+                    <h1><a href="">Makanan<span>Ku</span></a></h1>
                 </div>
                 <div class="nav-menu">
                     <a href="main.php">Home</a>
-                    <a href="">About</a>
-                    <a href="">Daily Market</a>
                     <a href="">Catalog</a>
                 </div>
             </div>
@@ -117,7 +115,7 @@ if(!($_SESSION['login'])) {
                         <button class="btn-menu"><a href="edit_menu.php">Edit</a> </button>
                         <?php } ?>
                         <?php if($_SESSION['role']==="user"){ ?>
-                        <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="icon/buy.png" alt="Beli"></a></button>
+                        <button class="btn-menu"><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="icon/buy.png" alt="Beli"></a></button>
                         <?php } ?>
                     </div>
                     </div>

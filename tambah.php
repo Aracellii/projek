@@ -14,12 +14,10 @@
         <div class="nav-container">
             <div class="nav">
                 <div class="nav-brand">
-                    <h1><a href="">Food<span>Stall</span></a></h1>
+                    <h1><a href="">Makanan<span>Ku</span></a></h1>
                 </div>
                 <div class="nav-menu">
                     <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Daily Market</a>
                     <a href="menu.php">Catalog</a>
                 </div>
             </div>

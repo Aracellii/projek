@@ -23,7 +23,6 @@ if(!($_SESSION['login'])) {
                 </div>
                 <div class="nav-menu">
                     <a href="">Home</a>
-                    <a href="">About</a>
                     <a href="menu.php">Catalog</a>
                 </div>
                 <?php if(!($_SESSION['login'])){?>

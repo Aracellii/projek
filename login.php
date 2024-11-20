@@ -55,7 +55,7 @@
 			<div class="nav-container">
 				<div class="nav">
 					<div class="nav-brand">
-						<h1><a href="">Food<span>Stall</span></a></h1>
+						<h1><a href="">Makanan<span>Ku</span></a></h1>
 					</div>
 				
 				</div>
