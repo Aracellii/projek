@@ -51,14 +51,7 @@ if(!($_SESSION['login'])) {
                      <?php } ?>
                    
                      <?php if($_SESSION['role']==="user"){?>
-                <div class="col3">
-                    <div class="food-card">
-                        <div class="add-menu">
-                        <H3>BUY</H3>
-                        <a href="pembayaran.php"> <img src="icon/plus.png" alt=""> </a>
-                    </div>
-                    </div>
-                    </div>
+                
                      <?php } ?>
             <?php while ($product = mysqli_fetch_assoc($result)): 
                  $gambar    = $product['gambar']; 
@@ -98,16 +91,6 @@ if(!($_SESSION['login'])) {
     
         <div class="container">
             <div class="row">
-            <?php if($_SESSION['role']==="user"){?>
-                <div class="col3">
-                    <div class="food-card">
-                        <div class="add-menu">
-                        <H3>BUY</H3>
-                        <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="gambar/buy.png" alt="Beli"></a></button>                    </div>
-                    </div>
-                    </div>
-                     <?php } ?>
-            
             <?php while ($product = mysqli_fetch_assoc($hasil)):
                 $gambar    = $product['gambar']; 
                 $namamenu  = $product["nama_menu"];
