@@ -82,6 +82,7 @@ if(!($_SESSION['login'])) {
                         <?php } ?>
                     </div>
                 </div>
+             </div>
             <?php endwhile ?>
          </div>
     </div>
@@ -119,7 +120,6 @@ if(!($_SESSION['login'])) {
                         <button><a href="pembayaran.php?id_menu=<?php echo $id; ?>&nama_menu=<?php echo $namamenu; ?>&harga=<?php echo $harga; ?>"><img src="icon/buy.png" alt="Beli"></a></button>
                         <?php } ?>
                     </div>
-                        
                     </div>
                 </div>
             <?php endwhile ?>
