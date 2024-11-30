@@ -1,10 +1,16 @@
-    <?php
-    session_start();
-    include 'menu.php';
-    include 'db.php';
-    $qhapus = "DELETE FROM menu WHERE id_menu = $id";
-    $qhapusp = "DELETE FROM pembayaran WHERE id_menu = $id";
-    $hapusp=mysqli_query($conn,$qhapusp);
-    $hasil = mysqli_query($conn, $qhapus);
-    header("location: menu.php");
-    ?>
+<?php 
+include 'db.php';
+session_start();
+if (isset($_POST['id_menu']) && $_POST['id_menu'] !== '') {
+    $id_menu = intval($_POST['id_menu']); 
+    $query = "DELETE FROM menu WHERE id_menu = $id_menu";
+    if (mysqli_query($conn, $query)) { 
+        header('Location: menu.php');
+        exit;
+    } else {
+        echo "Error deleting record: " . mysqli_error($conn);
+    }
+} else {
+    echo "id_menu is not set or is empty.";
+}
+?>
